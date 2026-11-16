@@ -3,16 +3,16 @@
 A local-first Android app for mood tracking, medication reminders, journaling
 and doctor appointments. No ads, analytics, accounts or mandatory cloud.
 
-**Beta 1.0.1 · Android 8.0+ · English and Russian**
+**Beta 1.0.0 · Android 8.0+ · English and Russian**
 
 **Development note:** This project was vibe-coded with AI assistance.
 
 ## Install
 
-**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.1-beta/Anchor-1.0.1-beta.apk)**
+**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.0-beta/Anchor-1.0.0-beta.apk)**
 
-1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.1-beta) on your Android device.
-2. Under **Assets**, download **Anchor-1.0.1-beta.apk**.
+1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.0-beta) on your Android device.
+2. Under **Assets**, download **Anchor-1.0.0-beta.apk**.
 3. Open the downloaded file. If Android asks, allow your browser or file manager
    to install apps from this source, then confirm installation.
    You can turn that permission off afterward.
@@ -21,7 +21,7 @@ While the repository is private, you need a GitHub account with access to downlo
 Updates require a matching signing key. Do not uninstall an existing app containing
 personal data without a verified backup.
 
-**Moving from 1.0.0-beta:** the Android application ID changed from `app.opora`
+**Moving from the old `app.opora` installation:** the Android application ID changed from `app.opora`
 to `io.github.savastone.anchor`. Android installs this version as a separate app;
 it does not update or automatically copy data from the old one. Export an encrypted
 backup in the old app and import it in the new app. Keep the old installation until

@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1-beta — Android application identity
+## 1.0.0-beta — current Android application identity
 
 - Android application ID: `io.github.savastone.anchor` (previously `app.opora`).
 - This installs alongside the old app, rather than updating it. Transfer records
@@ -10,18 +10,18 @@
 - Includes the MIT license and six application-identity regression tests.
 
 ### Build verification
-- `versionCode=3`, `versionName=1.0.1-beta`.
-- Release APK: 3,700,442 bytes, R8 + shrinkResources, non-debuggable.
+- `versionCode=3`, `versionName=1.0.0-beta`.
+- Release APK: 3,700,438 bytes, R8 + shrinkResources, non-debuggable.
 - APK SHA-256:
-  `ed96ced1dd9cdd297bed26e0af48b7c299aa67e94e326a78acf9a36b14116dd4`.
+  `017ade55871c70cf992dc2f7fd261272fbad8b7851a1eb4a65c367e05dd05276`.
 - 160 JVM tests passed; lintRelease — 0 errors, 24 warnings.
-- Signed release installed and launched alongside the old package on the test
-  emulator; old APK and installation timestamps remained unchanged.
+- Signed release updated the existing new-ID installation in place and launched
+  on the test emulator. The old `app.opora` APK and timestamps remained unchanged.
 - Compiled manifest verified: application classes retain the original namespace,
   while provider authorities use the new application ID.
 - Backup import and the full Android test suite were not rerun for this change.
 
-## 1.0.0-beta — initial snapshot for private review
+## Earlier private snapshot — legacy `app.opora` package
 
 ### Features
 - Mood, medication, journal, doctor visits and PDF report.

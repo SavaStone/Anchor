@@ -26,8 +26,10 @@ android {
         applicationId = "io.github.savastone.anchor"
         minSdk = 26
         targetSdk = 35
+        // Code 3 lets the already installed new-id build update in place; the
+        // visible version stays 1.0.0-beta for the owner's review build.
         versionCode = 3
-        versionName = "1.0.1-beta"
+        versionName = "1.0.0-beta"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }

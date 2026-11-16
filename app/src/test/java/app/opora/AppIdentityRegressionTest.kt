@@ -32,11 +32,11 @@ class AppIdentityRegressionTest {
     fun `build config ships the new application id`() {
         assertEquals(applicationId, BuildConfig.APPLICATION_ID)
         assertNotEquals(legacyApplicationId, BuildConfig.APPLICATION_ID)
+        assertEquals("1.0.0-beta", BuildConfig.VERSION_NAME)
         assertTrue(
-            "This private release must sort after the published 1.0.0-beta (2)",
+            "Code must not decrease below the installed new-id build for in-place updates",
             BuildConfig.VERSION_CODE >= 3
         )
-        assertNotEquals("1.0.0-beta", BuildConfig.VERSION_NAME)
     }
 
     @Test
