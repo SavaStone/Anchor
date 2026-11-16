@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_title">Backups</string>
+    <string name="backup_ack">Got it</string>
+    <string name="backup_progress_a11y">Backup operation in progress</string>
+    <string name="backup_section_device">On this device</string>
+    <string name="backup_encryption_hint">Exports with a password are encrypted on the device. Only you hold the key — without the passphrase the file cannot be opened.</string>
+
+    <string name="backup_export_import_title">Export and import</string>
+    <string name="backup_export_import_desc">An encrypted file can live anywhere: on a flash drive, in your own cloud, or with someone you trust.</string>
+    <string name="backup_export_with_password">Export with password</string>
+    <string name="backup_import_from_file">Import from file</string>
+    <string name="backup_export_json">Export unencrypted JSON</string>
+    <string name="backup_json_hint">JSON is handy for moving data to another app, but it is not password-protected. Do not leave it in a public place.</string>
+
+    <string name="backup_auto_title">Automatic backup to a folder</string>
+    <string name="backup_auto_desc">A copy on changes (at most once an hour) and once a day · the 7 latest files are kept</string>
+    <string name="backup_auto_folder_title">Auto-backup folder</string>
+    <string name="backup_auto_folder_none">No folder selected</string>
+    <string name="backup_auto_folder_choose">Choose folder</string>
+    <string name="backup_auto_folder_change">Change folder</string>
+    <string name="backup_auto_folder_remove">Remove</string>
+    <string name="backup_auto_folder_saved">Auto-backup folder saved</string>
+    <string name="backup_auto_folder_removed">Auto-backup folder removed</string>
+    <string name="backup_auto_password_title">Auto-backup password</string>
+    <string name="backup_auto_password_desc">A separate password, unrelated to the server. Remember it: the copy cannot be opened after a reinstall without it.</string>
+    <string name="backup_auto_password_saved">Auto-backup password saved</string>
+    <string name="backup_auto_password_save_failed">Could not save the password: the device key is unavailable.</string>
+    <string name="backup_auto_password_state_set">Password set</string>
+    <string name="backup_auto_password_state_missing">No password</string>
+    <string name="backup_auto_password_state_lost">The password cannot be opened with the device key</string>
+    <string name="backup_auto_password_set_action">Set password</string>
+    <string name="backup_auto_password_change">Change password</string>
+    <string name="backup_auto_not_configured">Automatic backup is not configured</string>
+    <string name="backup_auto_not_configured_hint">Choose a folder and set a password to let backups run on their own.</string>
+    <string name="backup_auto_status_last">Last copy: %1$s</string>
+    <string name="backup_auto_status_never">No copies in the folder yet</string>
+    <string name="backup_auto_status_error">Error: %1$s</string>
+    <string name="backup_auto_error_folder">the folder is unavailable and the permission was revoked — choose it again</string>
+    <string name="backup_auto_error_password_missing">no password set</string>
+    <string name="backup_auto_error_password_lost">the password can no longer be opened with the device key — set it again</string>
+    <string name="backup_auto_error_write">could not write the file: the folder is unavailable or there is no space</string>
+    <string name="backup_auto_saved_now">Copy saved to the folder</string>
+    <string name="backup_auto_create_now">Save a copy now</string>
+    <string name="backup_auto_empty">There are no copies in the selected folder yet.</string>
+    <string name="backup_auto_note">The files live in the selected folder and survive app removal. The password is stored on the device only, encrypted.</string>
+    <string name="backup_auto_files_title">Copies in the folder</string>
+    <string name="backup_auto_restore_hint">The auto-backup password is required to restore.</string>
+
+    <string name="backup_channel_title">Reinstall or channel switch (APK ↔ Google Play)</string>
+    <string name="backup_channel_summary">Google Play and APK use different signatures — the app cannot be updated over itself. A copy preserves the data.</string>
+    <string name="backup_channel_step1">1. Make a copy: “Save a copy now” or “Export with password”. Remember the password.</string>
+    <string name="backup_channel_step2">2. Uninstall the app. In-app data will be deleted — that is expected.</string>
+    <string name="backup_channel_step3">3. Install the APK or the Google Play version again and restore the copy from the folder or from a file.</string>
+    <string name="backup_channel_warning">Without a copy the data cannot be returned: Android cloud backup is disabled on purpose.</string>
+    <string name="backup_channel_expand">How to reinstall</string>
+    <string name="backup_channel_collapse">Collapse</string>
+    <string name="backup_file_meta">%1$s · %2$s</string>
+    <string name="backup_restore_action">Restore</string>
+    <string name="backup_restore_a11y">Restore backup from %1$s</string>
+
+    <string name="backup_export_done">Encrypted backup saved</string>
+    <string name="backup_json_export_done">JSON backup saved</string>
+    <string name="backup_error_save">Could not save the backup. Check free space and try again.</string>
+    <string name="backup_error_decrypt">Could not decrypt the backup. Check the password and try again.</string>
+    <string name="backup_error_read_file">Could not read the file</string>
+
+    <string name="backup_size_b">%1$s B</string>
+    <string name="backup_size_kb">%1$s KB</string>
+    <string name="backup_size_mb">%1$s MB</string>
+
+    <string name="backup_passphrase_title">Passphrase</string>
+    <string name="backup_passphrase_desc">Choose a phrase of at least 8 characters. Remember it: the file cannot be restored without it.</string>
+    <string name="backup_passphrase_repeat">Repeat</string>
+    <string name="backup_passphrase_mismatch">Passphrases do not match</string>
+    <string name="backup_passphrase_required">Enter a passphrase</string>
+    <string name="backup_passphrase_min">An export needs at least 8 characters</string>
+    <string name="backup_import_pass_title">Backup is encrypted</string>
+    <string name="backup_import_pass_desc">Enter the passphrase the backup was created with.</string>
+    <string name="backup_continue">Continue</string>
+    <string name="backup_cancel">Cancel</string>
+
+    <string name="backup_json_confirm_title">Export without encryption?</string>
+    <string name="backup_json_confirm_body">A JSON file is not password-protected: anyone who gets it can read your mood, medications, and journal. Keep it separately and delete it after the transfer.</string>
+    <string name="backup_json_confirm_action">Export</string>
+
+    <string name="webdav_section_title">Your own server (WebDAV)</string>
+    <string name="webdav_section_subtitle">Optional · Nextcloud, Yandex Disk, Synology, and others</string>
+    <string name="webdav_configure">Set up</string>
+    <string name="webdav_collapse">Collapse</string>
+    <string name="webdav_optional_note">The server is completely optional: Anchor works without it. Only an https:// address is supported — Android blocks unencrypted HTTP.</string>
+    <string name="webdav_key_warning">The WebDAV encryption key has changed. The server and backup passwords must be entered again; old archives will open only with the old key or password.</string>
+    <string name="webdav_open_settings">Open server settings</string>
+    <string name="webdav_url_label">Folder address</string>
+    <string name="webdav_user_label">Login</string>
+    <string name="webdav_password_label">Password</string>
+    <string name="webdav_app_password">App password</string>
+    <string name="webdav_keep_empty">Leave empty to keep unchanged</string>
+    <string name="webdav_show_password">Show password</string>
+    <string name="webdav_hide_password">Hide password</string>
+    <string name="webdav_backup_password_label">Backup password</string>
+    <string name="webdav_backup_password_new">Separate password for files</string>
+    <string name="webdav_show_backup_password">Show backup password</string>
+    <string name="webdav_hide_backup_password">Hide backup password</string>
+
+    <string name="webdav_error_url_required">Enter the folder URL</string>
+    <string name="webdav_error_https">An https:// address is required: Android blocks HTTP.</string>
+    <string name="webdav_error_user_required">Enter a login</string>
+    <string name="webdav_error_password_required">Enter the app password</string>
+    <string name="webdav_error_backup_password_required">Set the backup password</string>
+    <string name="webdav_save">Check and save</string>
+    <string name="webdav_saved">Server reachable, settings saved</string>
+    <string name="webdav_error_connect">Could not connect to the server. Check the address, login, and password.</string>
+    <string name="webdav_upload_done">Backup uploaded to the server</string>
+    <string name="webdav_error_upload">Could not upload the backup. Check your connection and the server settings.</string>
+    <string name="webdav_error_download">Could not download the backup. Check your connection and the server settings.</string>
+    <string name="webdav_need_save_hint">Upload and download become available once the server is checked and saved.</string>
+    <string name="webdav_need_backup_pass_hint">Set a separate backup password: it encrypts the files on the server.</string>
+    <string name="webdav_auto_sync">Auto-sync</string>
+    <string name="webdav_auto_sync_desc">Upload the backup on changes (every 6 hours, network only)</string>
+    <string name="webdav_last_sync">Last sync: %1$s</string>
+    <string name="webdav_encryption_note">The file on the server is encrypted with a separate backup password. The WebDAV password is only for transport. If the backup password changes, old archives will need the old one.</string>
+    <string name="webdav_disable">Disable server</string>
+    <string name="webdav_disable_confirm_title">Disable the server?</string>
+    <string name="webdav_disable_confirm_body">Anchor will forget the WebDAV address, login, and password and turn off auto-sync. Files already uploaded to the server will stay there.</string>
+    <string name="webdav_disable_confirm_action">Disable</string>
+    <string name="webdav_disabled">Server disabled</string>
+    <string name="webdav_error_disable">Could not disable the server. Try again.</string>
+
+    <string name="restore_progress_title">Restoring backup</string>
+    <string name="restore_stage_snapshot">Saving a backup of the current data first…</string>
+    <string name="restore_stage_writing">Clearing and writing data…</string>
+    <string name="restore_stage_rearming">Restoring reminders…</string>
+    <string name="restore_cancel">Cancel restore</string>
+    <string name="restore_success">Backup restored: %1$s. The previous data was saved to a restore point.</string>
+    <string name="restore_cancelled">Restore cancelled. Data and reminders are unchanged.</string>
+    <string name="restore_note">Before restoring, Anchor saves a restore point of the current data. Import replaces the data on the device.</string>
+    <string name="restore_confirm_title">Restore this backup?</string>
+    <string name="restore_confirm_body">A backup of the current data will be saved first: %1$s. Then %2$s will be replaced. The current data on the device will be deleted. Continue?</string>
+    <string name="restore_auto_confirm_title">Restore this automatic backup?</string>
+    <string name="restore_auto_confirm_body">A backup of the current data will be saved first: %1$s. Then the file %2$s will replace the current data.</string>
+
+    <string name="restore_found_title">Backup found</string>
+    <string name="restore_found_folder_body">A copy from %1$s is in the auto-backup folder. Restore the data?</string>
+    <string name="restore_found_downloads_body">There is a copy from %1$s in Downloads. Choose the file and restore?</string>
+    <string name="restore_found_restore">Restore</string>
+    <string name="restore_found_choose">Choose file</string>
+    <string name="restore_found_pick_title">Restore data from a backup?</string>
+    <string name="restore_found_pick_body">If you have used Anchor before or reinstalled the app, choose the .opora copy and enter its password. Otherwise start from scratch.</string>
+    <string name="restore_found_later">Later</string>
+    <string name="restore_prompt_password_hint">Enter the password the copy was created with.</string>
+    <string name="restore_running">Restoring data…</string>
+    <string name="restore_summary_title">Data restored</string>
+    <string name="restore_summary_body">Medications: %1$d · doses: %2$d · mood entries: %3$d · journal entries: %4$d</string>
+    <string name="restore_summary_ok">Done</string>
+</resources>

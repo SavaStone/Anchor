@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="doses">
+        <item quantity="one">%1$d dose</item>
+        <item quantity="other">%1$d doses</item>
+    </plurals>
+    <plurals name="entries">
+        <item quantity="one">%1$d entry</item>
+        <item quantity="other">%1$d entries</item>
+    </plurals>
+    <plurals name="medications">
+        <item quantity="one">%1$d medication</item>
+        <item quantity="other">%1$d medications</item>
+    </plurals>
+    <plurals name="duration_days">
+        <item quantity="one">%1$d day</item>
+        <item quantity="other">%1$d days</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%1$d h</item>
+        <item quantity="other">%1$d h</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%1$d min</item>
+        <item quantity="other">%1$d min</item>
+    </plurals>
+
+    <string name="duration_hours_minutes">%1$d h %2$d min</string>
+    <string name="common_dash">—</string>
+
+    <string name="home_block_mood">Mood</string>
+    <string name="home_block_meds">Medications</string>
+    <string name="home_block_journal">Journal</string>
+    <string name="home_block_appointment">Next appointment</string>
+
+    <string name="stop_doctor">Doctor\'s decision</string>
+    <string name="stop_course">Course completed</string>
+    <string name="stop_side_effects">Side effects</string>
+    <string name="stop_other">Other reason</string>
+
+    <string name="tag_joy">joy</string>
+    <string name="tag_calm">calm</string>
+    <string name="tag_interest">interest</string>
+    <string name="tag_gratitude">gratitude</string>
+    <string name="tag_hope">hope</string>
+    <string name="tag_pride">pride</string>
+    <string name="tag_love">love</string>
+    <string name="tag_anxiety">anxiety</string>
+    <string name="tag_fear">fear</string>
+    <string name="tag_panic">panic</string>
+    <string name="tag_sadness">sadness</string>
+    <string name="tag_longing">longing</string>
+    <string name="tag_anger">anger</string>
+    <string name="tag_irritation">irritation</string>
+    <string name="tag_shame">shame</string>
+    <string name="tag_guilt">guilt</string>
+    <string name="tag_loneliness">loneliness</string>
+    <string name="tag_apathy">apathy</string>
+    <string name="tag_fatigue">fatigue</string>
+    <string name="tag_confusion">confusion</string>
+
+    <string name="tag_headache">headache</string>
+    <string name="tag_nausea">nausea</string>
+    <string name="tag_dizziness">dizziness</string>
+    <string name="tag_tremor">tremor</string>
+    <string name="tag_drowsiness">drowsiness</string>
+    <string name="tag_insomnia">insomnia</string>
+    <string name="tag_dry_mouth">dry mouth</string>
+    <string name="tag_sweating">sweating</string>
+    <string name="tag_palpitations">palpitations</string>
+    <string name="tag_weight_gain">weight gain</string>
+    <string name="tag_appetite_loss">loss of appetite</string>
+    <string name="tag_appetite_gain">increased appetite</string>
+    <string name="tag_low_libido">lower libido</string>
+    <string name="tag_slowness">slowness</string>
+    <string name="tag_restless_legs">restless legs</string>
+    <string name="tag_constipation">constipation</string>
+    <string name="tag_diarrhea">diarrhea</string>
+    <string name="tag_muscle_pain">muscle pain</string>
+    <string name="meds_schedule_daily">Every day</string>
+    <string name="meds_schedule_as_needed">As needed</string>
+    <string name="meds_schedule_interval">Every %1$s</string>
+    <string name="meds_schedule_with_times">%1$s · %2$s</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_green">Green</string>
+    <string name="color_red">Red</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_teal">Teal</string>
+    <string name="color_brown">Brown</string>
+    <string name="color_gray">Gray</string>
+    <string name="errors_unknown">Unknown error</string>
+</resources>

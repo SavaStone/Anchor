@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="errors_open_file_write">Не удалось открыть файл для записи</string>
+    <string name="errors_passphrase_required">Файл зашифрован — нужна парольная фраза</string>
+    <string name="errors_wrong_passphrase">Неверная парольная фраза или повреждённый файл</string>
+    <string name="errors_newer_version">Копия создана более новой версией приложения</string>
+    <string name="errors_write_file">Не удалось записать файл</string>
+    <string name="errors_file_too_large">Файл слишком большой: максимум %1$d МБ</string>
+    <string name="errors_read_file">Не удалось прочитать файл</string>
+    <string name="errors_restore_point_missing">Точка восстановления не найдена</string>
+    <string name="errors_restore_point_read">Не удалось прочитать точку восстановления</string>
+    <string name="errors_restore_point_newer">Точка создана более новой версией приложения</string>
+    <string name="errors_key_changed">Ключ шифрования изменился после сброса/переустановки. Старые автокопии и точка восстановления откроются только со старым ключом.</string>
+    <string name="errors_not_a_backup">Файл не похож на копию «Опоры»</string>
+    <string name="errors_not_encrypted">Файл не является зашифрованной копией «Опоры»</string>
+    <string name="errors_restore_failed">Не удалось восстановить данные. Попробуйте ещё раз.</string>
+    <string name="errors_webdav_not_configured">Сначала настройте WebDAV</string>
+    <string name="errors_backup_password_required">Задайте пароль копии: WebDAV-пароль используется только для транспорта</string>
+    <string name="errors_no_server_backup">На сервере пока нет резервной копии</string>
+    <string name="errors_server_decrypt">Не удалось расшифровать копию с сервера. Проверьте пароль копии; старые файлы могли быть созданы с паролем WebDAV.</string>
+    <string name="errors_server_not_found">Не удалось найти сервер. Проверьте URL и интернет.</string>
+    <string name="errors_server_unreachable">Сервер не отвечает. Проверьте адрес и доступность.</string>
+    <string name="errors_server_timeout">Сервер не ответил вовремя. Проверьте интернет и попробуйте ещё раз.</string>
+    <string name="errors_connection_interrupted">Соединение прервалось. Проверьте интернет и попробуйте ещё раз.</string>
+    <string name="errors_secure_connection">Не удалось установить защищённое соединение. Проверьте сертификат сервера.</string>
+    <string name="errors_bad_folder_url">Некорректный URL папки. Нужен адрес https://…: Android блокирует незашифрованные HTTP-соединения.</string>
+    <string name="errors_network">Сетевая ошибка. Проверьте подключение к интернету.</string>
+    <string name="errors_connect">Не удалось подключиться к серверу</string>
+    <string name="errors_auth_rejected">Сервер отклонил логин или пароль (%1$d)</string>
+    <string name="errors_server_code">Сервер ответил %1$d</string>
+    <string name="errors_folder_access">Нет доступа к папке (%1$d)</string>
+    <string name="errors_folder_create">Не удалось создать папку на сервере (%1$d)</string>
+    <string name="errors_upload">Загрузка не удалась: %1$d</string>
+    <string name="errors_download">Скачивание не удалось: %1$d</string>
+    <string name="errors_sync_failed">Не удалось синхронизировать копию. Проверьте настройки сервера.</string>
+</resources>

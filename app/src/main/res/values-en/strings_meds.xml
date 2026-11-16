@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="meds_retry">Try again</string>
+    <string name="meds_back">Back</string>
+
+    <string name="meds_error_title">Couldn\'t load medications</string>
+    <string name="meds_error_body">Your data stays on the device. Try opening the list again.</string>
+    <string name="meds_empty_title">No medications yet</string>
+    <string name="meds_empty_body">Add a medication with a dose and time — Anchor will remind you about it.</string>
+    <string name="meds_empty_active_title">No active medications</string>
+    <string name="meds_empty_active_body">Add a medication — Anchor will remind you about it.</string>
+
+    <string name="meds_tab_day">Day</string>
+    <string name="meds_tab_list">List</string>
+    <string name="meds_tab_archive">Archive</string>
+    <string name="meds_tab_history">History</string>
+    <string name="meds_tab_today_desc">Doses today</string>
+    <string name="meds_tab_list_desc">Medication list</string>
+    <string name="meds_tab_history_desc">Dose history</string>
+
+    <string name="meds_today_header">Today\'s doses</string>
+    <string name="meds_taken_of">%1$d of %2$d</string>
+    <string name="meds_taken_of_a11y" tools:ignore="PluralsCandidate">%1$d of %2$d logged</string>
+
+    <string name="meds_dose_today_at">%1$s, today at %2$s</string>
+    <string name="meds_next_dose_line">Next: %1$s, %2$s at %3$s</string>
+    <string name="meds_day_today">today</string>
+    <string name="meds_day_tomorrow">tomorrow</string>
+    <string name="meds_day_today_label">Today</string>
+    <string name="meds_day_yesterday_label">Yesterday</string>
+
+    <string name="meds_snack_taken">%1$s: taken</string>
+    <string name="meds_snack_skipped">%1$s: skipped</string>
+    <string name="meds_snack_undo">Undo</string>
+    <string name="meds_snack_stopped">%1$s: medication stopped</string>
+    <string name="meds_snack_restore">Restore</string>
+    <string name="meds_snack_course_over">%1$s: the course has ended. Change the end date.</string>
+    <string name="meds_snack_resumed">%1$s: medication resumed</string>
+    <string name="meds_snack_prn_logged">%1$s: dose logged at %2$s</string>
+
+    <string name="meds_section_stopped">Stopped</string>
+    <string name="meds_section_paused">Paused</string>
+    <string name="meds_status_stopped">Stopped on %1$s</string>
+    <string name="meds_status_paused">Paused</string>
+
+    <string name="meds_history_empty_title">No history yet</string>
+    <string name="meds_history_caption">Last 30 days</string>
+    <string name="meds_fab_add">Add</string>
+
+    <string name="meds_stop_title">Stop this medication?</string>
+    <string name="meds_stop_body">%1$s: reminders will be turned off. Doses you already logged stay in your dose history.</string>
+    <string name="meds_stop_reason">Reason (optional)</string>
+    <string name="meds_stop_reason_none">Not specified</string>
+    <string name="meds_stop_reason_clear">No reason</string>
+    <string name="meds_stop_confirm">Stop</string>
+    <string name="meds_stop_cancel">Keep taking</string>
+    <string name="meds_selected">Selected</string>
+
+    <string name="meds_no_doses_today">No doses today</string>
+    <string name="meds_no_doses_planned">No scheduled doses.</string>
+    <string name="meds_no_doses_both">%1$s As-needed entries are below.</string>
+    <string name="meds_prn_today_line">Today: %1$d · last at %2$s</string>
+
+    <string name="meds_expanded">expanded</string>
+    <string name="meds_collapsed">collapsed</string>
+    <string name="meds_expand">Expand</string>
+    <string name="meds_collapse">Collapse</string>
+
+    <string name="meds_streak_title">Dose streak</string>
+    <string name="meds_streak_line">Full days in a row: %1$d. Recent days: %2$s.</string>
+    <string name="meds_day_missed">missed</string>
+    <string name="meds_day_rest">no doses</string>
+    <string name="meds_day_a11y">%1$s: %2$s</string>
+    <string name="meds_more_a11y">More: %1$s</string>
+
+    <string name="med_dose_taken_at">Taken at %1$s</string>
+    <string name="med_dose_taken">Taken</string>
+    <string name="med_dose_snoozed_until">Snoozed until %1$s</string>
+    <string name="med_dose_log">Log</string>
+    <string name="med_dose_log_action">Log dose</string>
+    <string name="med_dose_take_at">Take at %1$s</string>
+    <string name="med_dose_taken_today">Taken today</string>
+
+    <string name="med_form_tablet">tablets</string>
+    <string name="med_form_capsule">capsules</string>
+    <string name="med_form_drops">drops</string>
+    <string name="med_form_syrup">syrup</string>
+    <string name="med_form_injection">injections</string>
+    <string name="med_form_spray">spray</string>
+    <string name="med_form_patch">patch</string>
+    <string name="med_form_other">medication</string>
+
+    <string name="med_unit_tablet">tab</string>
+    <string name="med_unit_capsule">cap</string>
+    <string name="med_unit_drops">drop</string>
+    <string name="med_unit_syrup">ml</string>
+    <string name="med_unit_injection">inj.</string>
+    <string name="med_unit_spray">dose</string>
+    <string name="med_unit_patch">pc</string>
+    <string name="med_unit_other">pc</string>
+
+    <string name="stock_card_title">Medication stock</string>
+    <string name="stock_card_subtitle">Stock in medication units</string>
+    <string name="stock_not_set">Stock not set</string>
+    <string name="stock_remove_one">Remove one unit: %1$s</string>
+    <string name="stock_add_one">Add one unit: %1$s</string>
+    <string name="stock_set">Set</string>
+    <string name="stock_line">Stock: %1$s&#160;%2$s</string>
+    <string name="stock_item_line">%1$s: %2$s&#160;%3$s</string>
+    <string name="stock_section">Stock</string>
+    <string name="stock_optional">Optional</string>
+    <string name="stock_track">Track the amount</string>
+    <string name="stock_remaining">Remaining</string>
+    <string name="stock_threshold">Remind at</string>
+    <string name="stock_dose_hint">Each dose deducts %1$s&#160;%2$s. We\'ll remind you when the balance reaches the threshold.</string>
+
+    <string name="stock_error_empty">Enter the remaining amount or turn off stock tracking</string>
+    <string name="stock_error_count_number">The remaining amount must be a number</string>
+    <string name="stock_error_threshold_number">The threshold must be a number</string>
+    <string name="stock_error_threshold_first">Enter the remaining amount first, then the threshold</string>
+    <string name="stock_error_threshold_above">The threshold can\'t be greater than the remaining amount</string>
+
+    <string name="schedule_weekdays">On selected days</string>
+    <string name="schedule_interval_days">Every N days</string>
+    <string name="schedule_weekdays_label">Weekdays</string>
+    <string name="schedule_interval">Interval</string>
+    <string name="schedule_interval_dec">Decrease interval</string>
+    <string name="schedule_interval_inc">Increase interval</string>
+    <string name="schedule_interval_hint">From 1 to 90 days: reminders are looked up no more than 120 days ahead.</string>
+    <string name="schedule_times_label">Dose time</string>
+    <string name="schedule_remove_time">Remove time %1$s</string>
+    <string name="schedule_add_time">Add</string>
+    <string name="schedule_times_required">Add at least one time</string>
+    <string name="schedule_prn_note">As-needed medication: there are no scheduled reminders. Log each dose manually on the Today tab.</string>
+    <string name="schedule_start">Start</string>
+    <string name="schedule_end">End</string>
+    <string name="schedule_has_end">End date</string>
+    <string name="schedule_end_before_start">The end date is before the start date — reminders won\'t fire</string>
+
+    <string name="med_editor_form_label">Form</string>
+    <string name="med_editor_form_tablet">Tablets</string>
+    <string name="med_editor_form_capsule">Capsules</string>
+    <string name="med_editor_form_drops">Drops</string>
+    <string name="med_editor_form_syrup">Syrup</string>
+    <string name="med_editor_form_injection">Injections</string>
+    <string name="med_editor_form_spray">Spray</string>
+    <string name="med_editor_form_patch">Patch</string>
+    <string name="med_editor_form_other">Other</string>
+
+    <string name="med_editor_delete_title">Delete this medication?</string>
+    <string name="med_editor_delete_text">The schedule and future reminders will be deleted. Your dose history stays in the archive.</string>
+    <string name="med_editor_deleting">Deleting…</string>
+    <string name="med_editor_delete_error">Couldn\'t delete the medication. Try again.</string>
+    <string name="med_editor_discard_title">Leave without saving?</string>
+    <string name="med_editor_discard_text">Changes to the medication card won\'t be saved.</string>
+    <string name="med_editor_discard_confirm">Leave</string>
+    <string name="med_editor_discard_stay">Stay</string>
+
+    <string name="med_editor_load_error_title">Couldn\'t load the medication</string>
+    <string name="med_editor_load_error_body">Check available storage and try again.</string>
+
+    <string name="med_editor_title_short">Medication</string>
+    <string name="med_editor_title_new">New medication</string>
+    <string name="med_editor_title_edit">Edit medication</string>
+    <string name="med_editor_subtitle_new_short">New</string>
+    <string name="med_editor_subtitle_schedule_short">Schedule</string>
+    <string name="med_editor_subtitle">Schedule and reminders</string>
+    <string name="med_editor_delete_a11y">Delete medication</string>
+
+    <string name="med_editor_section_main">Basics</string>
+    <string name="med_editor_name_label">Name *</string>
+    <string name="med_editor_name_hint">For example, Sertraline</string>
+    <string name="med_editor_dosage_label">Dosage</string>
+    <string name="med_editor_dosage_hint">50 mg</string>
+    <string name="med_editor_color">Color</string>
+    <string name="med_editor_purpose_label">For</string>
+    <string name="med_editor_purpose_hint">For example, anxiety</string>
+    <string name="med_editor_prescriber_label">Prescriber</string>
+    <string name="med_editor_section_schedule">Schedule</string>
+
+    <string name="med_editor_notes_title">Notes</string>
+    <string name="med_editor_notes_hint">How to take it, side effects, questions for your doctor</string>
+    <string name="med_editor_notes_a11y">Medication notes</string>
+
+    <string name="med_editor_status_stopped">Medication stopped</string>
+    <string name="med_editor_status_paused">Medication paused</string>
+    <string name="med_editor_status_active">Active medication</string>
+    <string name="med_editor_course_over">The course ended on %1$s. Change the end date to bring the reminders back.</string>
+    <string name="med_editor_reminders_on">Dose reminders are on</string>
+    <string name="med_editor_stopped_body">Stopped on %1$s. Turn on to resume taking it.</string>
+    <string name="med_editor_reminders_off">Reminders are off. Turn on to resume taking it.</string>
+
+    <string name="med_editor_error_name">Enter the medication name</string>
+    <string name="med_editor_error_time">Add at least one dose time</string>
+    <string name="med_editor_error_weekday">Choose at least one weekday</string>
+    <string name="med_editor_error_dates">The end date is before the start date</string>
+    <string name="med_editor_error_check">Check the fields</string>
+    <string name="med_editor_save_error">Couldn\'t save the medication. Try again.</string>
+    <string name="med_editor_saving">Saving…</string>
+    <string name="med_editor_save">Save</string>
+    <string name="med_editor_cancel">Cancel</string>
+</resources>

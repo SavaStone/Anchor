@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf_page">p. %1$d</string>
+    <string name="pdf_generated">Generated %1$s · personal use only</string>
+    <string name="pdf_not_medical">Not a medical report and not a substitute for medical advice</string>
+    <string name="pdf_cover_kicker">SELF-CHECK-IN SUMMARY</string>
+    <string name="pdf_cover_title">What happened</string>
+    <string name="pdf_period">%1$s — %2$s · %3$s</string>
+    <string name="pdf_section_highlights">Highlights</string>
+    <string name="pdf_metric_days">Days with check-ins</string>
+    <string name="pdf_metric_avg_mood">Average mood</string>
+    <string name="pdf_metric_streak">Day streak</string>
+    <string name="pdf_metric_anxiety">Anxiety</string>
+    <string name="pdf_metric_energy">Energy</string>
+    <string name="pdf_metric_sleep">Sleep</string>
+    <string name="pdf_section_mood_chart">Mood over time</string>
+    <string name="pdf_chart_need_two">Not enough check-ins for a chart</string>
+    <string name="pdf_section_distribution">Mood distribution</string>
+    <string name="pdf_section_meds">Medications</string>
+    <string name="pdf_no_active_meds">No active medications.</string>
+    <string name="pdf_stock">Stock: %1$s</string>
+    <string name="pdf_section_tags">Most frequent</string>
+    <string name="pdf_no_tags">No emotions or symptoms logged.</string>
+    <string name="pdf_emotions">Emotions</string>
+    <string name="pdf_symptoms">Symptoms</string>
+    <string name="pdf_section_journal">Journal</string>
+    <string name="pdf_no_entries">No entries in the selected period.</string>
+    <string name="pdf_entries_count">%1$s entries. Titles and the start of each note are below.</string>
+    <string name="pdf_untitled">Untitled</string>
+    <string name="pdf_section_notes">Notes and questions for the appointment</string>
+    <string name="pdf_notes_hint">Write down observations, questions, and anything important to discuss with your doctor.</string>
+</resources>

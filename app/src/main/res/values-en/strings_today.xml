@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common UI atoms -->
+    <string name="common_back">Back</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_loading">Loading</string>
+    <string name="common_no_data">No data</string>
+    <string name="common_pick_time">Select time</string>
+    <string name="common_change_date_a11y">Change date: %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_level_of_five">%1$d of 5</string>
+    <string name="a11y_calendar_today">%1$s, today</string>
+    <string name="a11y_calendar_future">%1$s, future day</string>
+    <string name="a11y_calendar_mood">%1$s, mood %2$d of 5, %3$s</string>
+    <string name="a11y_calendar_moods">%1$s, moods that day: %2$s</string>
+    <string name="a11y_calendar_no_mood">%1$s, no entry</string>
+    <string name="a11y_calendar_selected">%1$s, selected</string>
+    <string name="a11y_dose_named">%1$s: %2$s</string>
+    <string name="a11y_dose_overflow">More: %1$s, %2$s</string>
+
+    <!-- Calendar -->
+    <string name="calendar_prev_month">Previous month</string>
+    <string name="calendar_next_month">Next month</string>
+    <string name="calendar_mood_scale_a11y">Mood scale: 1 — very low, 5 — great</string>
+
+    <!-- Dose line -->
+    <string name="dose_line_taken">%1$s · taken</string>
+    <string name="dose_line_taken_at">%1$s · taken at %2$s</string>
+    <string name="dose_line_snoozed">%1$s · snoozed until %2$s</string>
+    <string name="dose_line_join">%1$s · %2$s</string>
+
+    <!-- Medication and dose actions -->
+    <string name="actions_edit_time">Change time</string>
+    <string name="actions_undo">Return to pending</string>
+    <string name="actions_delete_dose">Delete entry</string>
+    <string name="actions_pause">Pause medication</string>
+    <string name="actions_discontinue">Stop medication</string>
+    <string name="actions_edit_medication">Edit medication</string>
+    <string name="actions_resume">Resume medication</string>
+    <string name="actions_delete_medication">Delete medication</string>
+    <string name="actions_delete_dose_title">Delete entry?</string>
+    <string name="actions_delete_dose_body">The dose of “%1$s” at %2$s will be removed from history. If stock is tracked, one unit will be returned.</string>
+    <string name="actions_delete_med_title">Delete medication?</string>
+    <string name="actions_delete_med_body">The schedule and future reminders will be deleted. Dose history stays.</string>
+
+    <!-- Today screen -->
+    <string name="today_snackbar_taken">%1$s: taken</string>
+    <string name="today_snackbar_skipped">%1$s: skipped</string>
+    <string name="today_snackbar_undo">Undo</string>
+    <string name="today_stop_title">Stop this medication?</string>
+    <string name="today_stop_body">“%1$s” will no longer send reminders. Dose history stays.</string>
+    <string name="today_meds_empty_body">Your schedule, doses and reminders will be right here.</string>
+    <string name="today_no_doses">No doses today</string>
+    <string name="today_appointment_today">today</string>
+    <string name="today_appointment_tomorrow">tomorrow</string>
+    <plurals name="today_appointment_in_days">
+        <item quantity="one">in %1$d day</item>
+        <item quantity="other">in %1$d days</item>
+    </plurals>
+    <string name="today_appointment_time">%1$s, %2$s</string>
+    <string name="today_appointment_time_place">%1$s, %2$s · %3$s</string>
+    <string name="today_journal_subtitle">Notes, thoughts and things you want to keep</string>
+    <string name="today_mood_question">How are you today?</string>
+    <string name="today_sleep">Sleep: %1$s</string>
+    <string name="today_anxiety">Anxiety: %1$d/10</string>
+    <string name="today_stats_join">%1$s · %2$s</string>
+</resources>

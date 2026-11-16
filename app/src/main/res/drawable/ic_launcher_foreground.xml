@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Сердце-камень: тёплый камень с мягким светом сверху и тенью внизу. -->
+    <path
+        android:pathData="M54,40.5 C49.3,31.2 40.1,27.6 33.4,31.6 C26.4,35.9 26.3,45.2 30.4,54.2 C34.9,64.2 44,72.3 54,80.2 C64,72.3 73.1,64.2 77.6,54.2 C81.7,45.2 81.6,35.9 74.6,31.6 C67.9,27.6 58.7,31.2 54,40.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="36"
+                android:startY="27"
+                android:endX="70"
+                android:endY="82"
+                android:startColor="#FFFFFAEE"
+                android:centerColor="#FFF3E5CE"
+                android:endColor="#FFD1B58D" />
+        </aapt:attr>
+    </path>
+
+    <!-- Скульптурная линия по внутреннему краю и блик на верхней доле. -->
+    <path
+        android:pathData="M54.2,45.3 C50.6,38.6 44,35.9 38.9,38.7 C33.9,41.5 33.7,48.2 36.8,55 C40.1,62.3 46.8,68.4 54.2,74.3"
+        android:fillColor="#00000000"
+        android:strokeColor="#3DC3A279"
+        android:strokeWidth="1"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M54.2,45.3 C50.6,38.6 44,35.9 38.9,38.7 C35.2,40.7 34.1,44.8 34.8,49.4"
+        android:fillColor="#00000000"
+        android:strokeColor="#61FFFAF0"
+        android:strokeWidth="1"
+        android:strokeLineCap="round" />
+
+    <!-- Росток из сердечной впадины. -->
+    <path
+        android:pathData="M54.6,39.8 C54.2,36 54.8,32.8 56.2,30.4"
+        android:fillColor="#00000000"
+        android:strokeColor="#FF4B8668"
+        android:strokeWidth="2.1"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M56.4,30.8 C57.4,27 60.6,24.2 64.6,24.1 C64,28.4 61.2,31 56.4,30.8 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="57"
+                android:startY="23"
+                android:endX="61"
+                android:endY="33"
+                android:startColor="#FFD9F4E0"
+                android:endColor="#FF72B88D" />
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M56,32.2 C52.2,32 49.2,29.4 48.8,25.4 C52.9,25.9 55.6,28.5 56,32.2 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="53"
+                android:startY="25"
+                android:endX="50"
+                android:endY="33"
+                android:startColor="#FFC2EBCB"
+                android:endColor="#FF62A77C" />
+        </aapt:attr>
+    </path>
+    <path
+        android:pathData="M56.8,30.7 C59.6,28 61.6,26.5 63.4,25.6"
+        android:fillColor="#00000000"
+        android:strokeColor="#474B8668"
+        android:strokeWidth="0.55"
+        android:strokeLineCap="round" />
+</vector>

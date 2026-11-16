@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="more_title">Ещё</string>
+    <string name="more_name_prompt">Как вас называть?</string>
+    <string name="more_name_hint">Имя появится на главном экране и в отчёте</string>
+    <string name="more_name_set_cd">Указать имя</string>
+    <string name="more_name_edit_cd">Изменить имя</string>
+
+    <string name="more_appointments">Приёмы у врача</string>
+
+    <string name="more_section_reminders">Напоминания</string>
+    <string name="more_reminders_subtitle">Работают локально, без интернета</string>
+    <string name="more_meds_channel_on">Точное время приёма и действия в уведомлении</string>
+    <string name="more_mood_channel_on">Мягкое напоминание раз в день</string>
+    <string name="more_channel_off">Канал уведомлений выключен в настройках системы</string>
+    <string name="more_time_label">Время: %1$s</string>
+    <string name="more_refill_toggle">Пополнение запаса</string>
+    <string name="more_refill_channel_on">Когда таблеток остаётся мало</string>
+
+    <string name="more_exact_title">Точные будильники</string>
+    <string name="more_exact_body">Без разрешения напоминания могут приходить с задержкой</string>
+    <string name="more_exact_action">Разрешить</string>
+    <string name="more_notifications_off_title">Уведомления выключены</string>
+    <string name="more_notifications_off_body">Разрешите их в настройках системы</string>
+    <string name="more_meds_off_title">Напоминания о лекарствах выключены</string>
+    <string name="more_meds_off_body">Канал «Лекарства» отключён в настройках системы</string>
+    <string name="more_refill_off_title">Пополнение запаса выключено</string>
+    <string name="more_refill_off_body">Канал «Пополнение запаса» отключён в настройках системы</string>
+    <string name="more_mood_off_title">Напоминание о настроении выключено</string>
+    <string name="more_mood_off_body">Канал «Ежедневные напоминания» отключён в настройках системы</string>
+    <string name="more_open_channel">Открыть канал</string>
+
+    <string name="more_section_appearance">Внешний вид</string>
+    <string name="more_theme">Тема</string>
+    <string name="more_theme_system">Системная</string>
+    <string name="more_theme_light">Светлая</string>
+    <string name="more_theme_dark">Тёмная</string>
+    <string name="more_dynamic_title">Цвета системы</string>
+    <string name="more_dynamic_on">Под цвет обоев</string>
+    <string name="more_dynamic_unavailable">Недоступно: нужен Android 12 или новее</string>
+    <string name="more_left_title">Режим для левшей</string>
+    <string name="more_left_body">Главная кнопка слева</string>
+    <string name="more_lock_title">Блокировка приложения</string>
+    <string name="more_lock_body">Биометрия или PIN устройства</string>
+    <string name="more_secure_title">Защита от скриншотов</string>
+    <string name="more_secure_body">Скрывать превью в недавних приложениях</string>
+
+    <string name="more_section_home">Главная страница</string>
+    <string name="more_home_subtitle">Порядок и видимость блоков</string>
+    <string name="more_home_hint">Шапка с датой закреплена. Порядок и видимость можно менять только у этих блоков.</string>
+    <string name="more_home_move_up_cd">Поднять «%1$s»</string>
+    <string name="more_home_move_down_cd">Опустить «%1$s»</string>
+    <string name="more_home_reset">Сбросить</string>
+
+    <string name="more_section_tabs">Нижнее меню</string>
+    <string name="more_tabs_subtitle">«Сегодня» и «Ещё» всегда на месте</string>
+
+    <string name="more_section_data">Данные</string>
+    <string name="more_backup">Резервное копирование</string>
+    <string name="more_backup_body">Зашифрованные копии и WebDAV</string>
+    <string name="more_report">Отчёт для врача</string>
+    <string name="more_report_body">PDF со сводкой за период</string>
+    <string name="more_restore">Восстановить данные</string>
+    <string name="more_restore_point">Точка от %1$s · %2$s</string>
+    <string name="more_discard_point_title">Удалить точку восстановления</string>
+    <string name="more_clear_hint">Их можно будет восстановить</string>
+
+    <string name="more_section_about">О приложении</string>
+    <string name="more_problem_report">Сообщить о проблеме</string>
+    <string name="more_problem_report_body">Версия, настройки и последний сбой</string>
+    <string name="problem_report_subject">Опора: сообщение о проблеме</string>
+    <string name="problem_report_chooser">Письмо на %1$s</string>
+    <string name="problem_report_error">Не удалось открыть меню «Поделиться» или на устройстве нет приложения для отправки</string>
+    <string name="more_disclaimer">Данные остаются на устройстве. «Опора» не заменяет врача и не назначает лечение.</string>
+
+    <string name="more_name_dialog_title">Имя профиля</string>
+    <string name="more_name_label">Имя или обращение</string>
+    <string name="more_save">Сохранить</string>
+    <string name="more_cancel">Отмена</string>
+
+    <string name="more_demo_body">Текущие записи сохранятся, добавится пример с лекарствами, настроением и дневником.</string>
+    <string name="more_demo_action">Добавить</string>
+    <string name="more_demo_done">Демо-данные добавлены</string>
+
+    <string name="more_clear_title">Удалить все данные?</string>
+    <string name="more_clear_body">Удалятся все записи, настройки и PDF-отчёты. Перед удалением сохранится точка восстановления: данные можно вернуть в «Ещё → Данные». Всё, что вы добавите после удаления, сохранится при восстановлении.</string>
+    <string name="more_clear_done">Все данные удалены. Их можно восстановить в разделе «Данные».</string>
+
+    <string name="more_restore_title">Восстановить данные?</string>
+    <string name="more_restore_body">Записи из точки восстановления вернутся. Всё, что добавлено после удаления, останется. После восстановления точка удалится.</string>
+    <string name="more_restore_action">Восстановить</string>
+    <string name="more_restore_done">Данные восстановлены</string>
+
+    <string name="more_discard_title">Удалить точку восстановления?</string>
+    <string name="more_discard_body">Снимок удалённых данных будет стёрт с устройства. Вернуть эти записи снова будет нельзя.</string>
+    <string name="more_discard_done">Точка восстановления удалена</string>
+
+    <string name="more_lock_disable_title">Отключить блокировку?</string>
+    <string name="more_lock_disable_body">«Опора» будет открываться без подтверждения личности. Записи останутся только на этом устройстве. Включить защиту снова можно здесь же.</string>
+    <string name="more_lock_disable_action">Отключить</string>
+    <string name="more_lock_keep">Оставить</string>
+    <string name="more_lock_help_title">Сначала защитите устройство</string>
+    <string name="more_lock_help_body">Блокировка «Опоры» использует биометрию или PIN/графический ключ устройства. Сейчас они не настроены, поэтому включить защиту нельзя.</string>
+    <string name="more_lock_help_action">Настройки</string>
+    <string name="more_later">Позже</string>
+
+    <string name="about_title">Об «Опоре»</string>
+    <string name="about_intro">Тихое место для наблюдения за собой. Без аккаунта, рекламы и обязательного облака.</string>
+    <string name="about_version">Версия %1$s · сборка %2$d</string>
+    <string name="about_section_privacy">Приватность</string>
+    <string name="about_privacy_accounts_title">Нет аккаунтов и аналитики</string>
+    <string name="about_privacy_accounts_body">Приложение не отправляет данные разработчику и не требует регистрации.</string>
+    <string name="about_privacy_local_title">Данные на устройстве</string>
+    <string name="about_privacy_local_body">Настроение, лекарства и дневник хранятся в локальной базе. Доступ — только у вас.</string>
+    <string name="about_privacy_server_title">Свой сервер по желанию</string>
+    <string name="about_privacy_server_body">WebDAV-синхронизация использует вашу папку. Файлы шифруются до отправки.</string>
+    <string name="about_section_important">Важно понимать</string>
+    <string name="about_disclaimer_title">«Опора» — не медицинский сервис.</string>
+    <string name="about_disclaimer_body">Это инструмент самонаблюдения: он не ставит диагнозы, не назначает лечение и не заменяет консультацию врача. Не меняйте схему приёма лекарств самостоятельно. При ухудшении состояния обратитесь к специалисту.</string>
+    <string name="about_footer">Сделано с уважением к людям, которые проходят лечение.</string>
+    <string name="about_credits">Открытые компоненты: Kotlin, Jetpack Compose, Material 3, Room, WorkManager, OkHttp.</string>
+</resources>

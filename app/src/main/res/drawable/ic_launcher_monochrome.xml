@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Тематическая иконка: системный оттенок заменяет весь рисунок,
+         поэтому важна только чистая silhouette. -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,40.5 C49.3,31.2 40.1,27.6 33.4,31.6 C26.4,35.9 26.3,45.2 30.4,54.2 C34.9,64.2 44,72.3 54,80.2 C64,72.3 73.1,64.2 77.6,54.2 C81.7,45.2 81.6,35.9 74.6,31.6 C67.9,27.6 58.7,31.2 54,40.5 Z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54.6,39.8 C54.2,36 54.8,32.8 56.2,30.4"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.1"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M56.4,30.8 C57.4,27 60.6,24.2 64.6,24.1 C64,28.4 61.2,31 56.4,30.8 Z" />
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M56,32.2 C52.2,32 49.2,29.4 48.8,25.4 C52.9,25.9 55.6,28.5 56,32.2 Z" />
+</vector>

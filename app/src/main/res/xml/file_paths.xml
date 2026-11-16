@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Only the generated PDF reports are shared via FileProvider. -->
+    <files-path name="reports" path="reports/" />
+    <!-- Последний файл падения прикладывается к отчёту о проблеме. -->
+    <files-path name="crashes" path="crashes/" />
+</paths>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="demo_med_sertraline">Сертралин</string>
+    <string name="demo_med_lamotrigine">Ламотриджин</string>
+    <string name="demo_med_quetiapine">Кветиапин</string>
+    <string name="demo_med_atarax">Атаракс</string>
+    <string name="demo_dosage_50">50 мг</string>
+    <string name="demo_dosage_25">25 мг</string>
+    <string name="demo_purpose_depression">депрессивный эпизод</string>
+    <string name="demo_purpose_mood_stabilizer">стабилизатор настроения</string>
+    <string name="demo_purpose_sleep">сон</string>
+    <string name="demo_purpose_anxiety_prn">тревога, по потребности</string>
+
+    <string name="demo_note_hard_evening">Был тяжёлый вечер, но позвонил другу — стало легче.</string>
+    <string name="demo_note_first_walk">Первая прогулка за неделю. Солнце помогло.</string>
+    <string name="demo_note_before_visit">Тревога перед приёмом у врача, записал мысли заранее.</string>
+    <string name="demo_note_calm_day">Спокойный день. Успел сделать запланированное.</string>
+    <string name="demo_note_low_energy">Мало сил. Разрешил себе отдыхать без вины.</string>
+
+    <string name="demo_journal_1_title">Что помогло сегодня</string>
+    <string name="demo_journal_1_body">Проснулся с тяжёлой головой, но всё равно вышел на короткую прогулку. Помогло не думать о делах и просто смотреть на деревья. Вечером стало спокойнее.</string>
+    <string name="demo_journal_1_tags">наблюдение,практика</string>
+    <string name="demo_journal_2_title">Мысли перед приёмом</string>
+    <string name="demo_journal_2_body">Хочу обсудить с врачом: 1) сон всё ещё нестабильный; 2) тревога чаще к вечеру; 3) спросить про анализ крови. Записал, чтобы не забыть.</string>
+    <string name="demo_journal_2_tags">врач,вопросы</string>
+    <string name="demo_journal_3_title">Плохой вечер</string>
+    <string name="demo_journal_3_body" tools:ignore="TypographyDashes">Накрыло ближе к ночи. Написал в чат поддержки, подышал 4-7-8. Не идеально, но пережил. Утром было легче.</string>
+    <string name="demo_journal_3_tags">тревога,копинг</string>
+    <string name="demo_journal_4_title">Маленькая победа</string>
+    <string name="demo_journal_4_body">Наконец-то разобрал почту, которую откладывал две недели. Чувствую облегчение и немного гордости.</string>
+    <string name="demo_journal_4_tags">прогресс</string>
+    <string name="demo_journal_5_title">Список дел на завтра</string>
+    <string name="demo_journal_5_body">— позвонить в аптеку\n— 20 минут прогулки\n— не забыть дневник\n\nНичего героического. Достаточно.</string>
+    <string name="demo_journal_5_tags">планы</string>
+    <string name="demo_journal_6_title">Про сон</string>
+    <string name="demo_journal_6_body">Лёг в 23:30, вставал два раза. Кветиапин помог заснуть быстрее, чем вчера. Утром немного туманно.</string>
+    <string name="demo_journal_6_tags">сон</string>
+
+    <string name="demo_appt_psychiatrist">Психиатр</string>
+    <string name="demo_doctor_elena">Елена Сергеевна</string>
+    <string name="demo_place_dispensary">ПНД, каб. 214</string>
+    <string name="demo_appt_psychiatrist_notes">Взять дневник и список вопросов</string>
+    <string name="demo_appt_therapy">Психотерапия</string>
+    <string name="demo_doctor_anna">Анна Игоревна</string>
+    <string name="demo_place_online">онлайн</string>
+    <string name="demo_appt_therapy_notes">Тема: границы и тревога</string>
+</resources>

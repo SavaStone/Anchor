@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Безопасность и приватность
+    url: mailto:savastone32@proton.me
+    about: Не публикуйте детали уязвимостей и личные данные в Issues.

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Mood screen -->
+    <string name="mood_title">Mood</string>
+    <string name="mood_empty_title">No check-ins yet</string>
+    <string name="mood_empty_body">Add a check-in — your calendar and trends will appear here.</string>
+    <string name="mood_period_30_days">Last 30 days</string>
+    <string name="mood_metric_mood">mood</string>
+    <string name="mood_metric_anxiety">anxiety</string>
+    <string name="mood_metric_sleep">sleep</string>
+    <plurals name="mood_marks">
+        <item quantity="one">%1$d check-in</item>
+        <item quantity="other">%1$d check-ins</item>
+    </plurals>
+    <string name="mood_scale_hint">1 — very difficult, 5 — great</string>
+    <string name="mood_anxiety_title">Anxiety</string>
+    <string name="mood_anxiety_hint">0 — calm, 10 — very strong</string>
+    <string name="mood_energy_title">Energy</string>
+    <string name="mood_sleep_title">Sleep</string>
+    <string name="mood_distribution">Distribution</string>
+    <string name="mood_top_emotions">Frequent emotions</string>
+    <string name="mood_top_symptoms">Frequent symptoms</string>
+    <string name="mood_tag_count">%1$s · %2$d</string>
+    <string name="mood_mark_action">Check in</string>
+    <string name="mood_mark_a11y">Add a mood check-in</string>
+    <string name="mood_date_with_year">%1$s, %2$d</string>
+    <string name="mood_future_day">Future day</string>
+    <string name="mood_no_marks">No check-in</string>
+    <string name="mood_metric_anxiety_value">anxiety %1$d/10</string>
+    <string name="mood_metric_energy_value">energy %1$d/10</string>
+    <string name="mood_metric_sleep_value">sleep %1$s</string>
+    <string name="mood_edit_a11y">Edit check-in</string>
+
+    <string name="insight_title">Observation</string>
+    <string name="insight_window">Over the last 30 days</string>
+    <string name="insight_most_frequent">Most often</string>
+
+    <!-- Check-in editor -->
+    <string name="mood_editor_title_short">Check-in</string>
+    <string name="mood_editor_title_edit">Edit check-in</string>
+    <string name="mood_editor_title_new">Check in</string>
+    <string name="mood_saving">Saving…</string>
+    <string name="mood_saved">Saved</string>
+    <string name="mood_delete_a11y">Delete check-in</string>
+    <string name="mood_time_chip">Check-in time: %1$s</string>
+    <string name="mood_note_label">What influenced it</string>
+    <string name="mood_note_placeholder">A few words: what affected how you felt, what helped</string>
+    <string name="mood_done">Done</string>
+    <string name="mood_add">Add</string>
+    <string name="mood_cancel">Cancel</string>
+    <string name="mood_choose">Select</string>
+    <string name="mood_need_mood_title">Mood is required</string>
+    <string name="mood_need_mood_body">Emotions, symptoms, metrics and the note are saved together with a mood level. Without it they will not be saved.</string>
+    <string name="mood_exit_without_saving">Exit without saving</string>
+    <string name="mood_choose_mood">Choose a mood</string>
+    <string name="mood_delete_title">Delete this check-in?</string>
+    <string name="mood_delete_body">The entry for %1$s will be deleted permanently.</string>
+    <string name="mood_deleting">Deleting…</string>
+    <string name="mood_custom_emotion">Custom emotion</string>
+    <string name="mood_custom_symptom">Custom symptom</string>
+    <string name="mood_error_not_found">Check-in not found. It may have been deleted already.</string>
+    <string name="mood_error_load">Could not load the check-in. Try opening it again.</string>
+    <string name="mood_error_save">Could not save the check-in. Try again.</string>
+    <string name="mood_error_delete">Could not delete the check-in. Try again.</string>
+    <string name="mood_error_add_tag">Could not add the item. Try again.</string>
+
+    <!-- Scale, metrics and tags -->
+    <string name="mood_scale_title">How do you feel?</string>
+    <string name="mood_level_of_five">%1$d of 5</string>
+    <string name="mood_body_metrics_title">Body metrics</string>
+    <string name="mood_optional">Optional</string>
+    <string name="mood_emotions_title">Emotions</string>
+    <string name="mood_symptoms_title">Symptoms and side effects</string>
+    <string name="mood_collapse">Show less</string>
+    <string name="mood_show_all">Show all</string>
+    <string name="mood_tag_name_label">Name</string>
+
+    <!-- Good things today -->
+    <string name="mood_positives_title">Good things today</string>
+    <string name="mood_positives_events">Events</string>
+    <string name="mood_positives_events_empty">What good things happened?</string>
+    <string name="mood_positives_deeds">Things done</string>
+    <string name="mood_positives_deeds_empty">What did you manage to do?</string>
+    <string name="mood_positive_event_title">Good event</string>
+    <string name="mood_positive_deed_title">Thing done</string>
+    <string name="mood_positive_field">Entry</string>
+    <string name="mood_positive_add_a11y">Add: %1$s</string>
+    <string name="mood_positive_delete_a11y">Delete entry: %1$s</string>
+
+    <!-- Charts -->
+    <string name="chart_mood_empty_a11y">Mood chart: not enough data yet</string>
+    <string name="chart_mood_a11y">Mood chart. Check-ins: %1$d. Range: %2$d to %3$d. Latest: %4$d of 5.</string>
+    <string name="chart_anxiety_empty_a11y">Anxiety chart: not enough data yet</string>
+    <string name="chart_anxiety_a11y">Anxiety chart. Check-ins: %1$d. Range: %2$d to %3$d of 10.</string>
+    <string name="chart_anxiety_hint">Add anxiety levels to your daily check-ins to see the trend.</string>
+    <string name="chart_distribution_empty_a11y">Mood distribution: no check-ins yet</string>
+    <string name="chart_distribution_a11y" tools:ignore="PluralsCandidate">Mood distribution, %1$d total: %2$s</string>
+    <string name="chart_distribution_item">%1$d — %2$d</string>
+    <string name="chart_week_rhythm_empty_a11y">Week rhythm: no data</string>
+    <string name="chart_week_rhythm_a11y">Week rhythm: %1$s</string>
+    <string name="chart_week_rhythm_item">%1$s — %2$d of 5</string>
+
+    <!-- Journal -->
+    <string name="journal_title">Journal</string>
+    <string name="journal_search_placeholder">Search entries</string>
+    <string name="journal_search_clear">Clear search</string>
+    <string name="journal_filter_all">All</string>
+    <string name="journal_results">Found: %1$s</string>
+    <string name="journal_empty_search_title">Nothing found</string>
+    <string name="journal_empty_search_body">Try a different query or reset the filter.</string>
+    <string name="journal_reset_filters">Reset filters</string>
+    <string name="journal_first_entry">First entry</string>
+    <string name="journal_pinned">Pinned</string>
+    <string name="journal_pinned_state">Pinned</string>
+    <string name="journal_new_short">Entry</string>
+    <string name="journal_new_a11y">New entry</string>
+    <string name="journal_untitled_note">Note</string>
+    <string name="journal_more_tags">+%1$d</string>
+
+    <!-- Entry editor -->
+    <string name="journal_error_load">Could not load the entry. Try opening it again.</string>
+    <string name="journal_error_remove_empty">Could not remove the empty entry. Try again.</string>
+    <string name="journal_error_save">Could not save the entry. Check free space and try again.</string>
+    <string name="journal_error_delete">Could not delete the entry. Try again.</string>
+    <string name="journal_back">Back</string>
+    <string name="journal_saving">Saving…</string>
+    <string name="journal_saved">Saved</string>
+    <string name="journal_pin">Pin</string>
+    <string name="journal_unpin">Unpin</string>
+    <string name="journal_delete_a11y">Delete entry</string>
+    <string name="journal_done">Done</string>
+    <string name="journal_title_field_a11y">Entry title</string>
+    <string name="journal_title_placeholder">Title</string>
+    <string name="journal_body_field_a11y">Entry text</string>
+    <string name="journal_body_placeholder">What happened, what you thought about, what you want to remember…</string>
+    <string name="journal_tags_title">Tags</string>
+    <string name="journal_tag_remove_a11y">Tag “%1$s”. Tap to remove</string>
+    <string name="journal_add_tag">Add tag</string>
+    <string name="journal_tag_label">Tag</string>
+    <string name="journal_tag_placeholder">comma-separated</string>
+    <string name="journal_add">Add</string>
+    <string name="journal_cancel">Cancel</string>
+    <string name="journal_choose">Select</string>
+    <string name="journal_delete_title">Delete this entry?</string>
+    <string name="journal_delete_body">This cannot be undone.</string>
+    <string name="journal_deleting">Deleting…</string>
+    <string name="journal_day_state">State of the day</string>
+    <string name="journal_day_state_hint">Filled in under Mood</string>
+    <string name="journal_day_state_empty">Add a mood check-in — it will appear here next to the entry.</string>
+    <string name="journal_day_state_future">Future day: you can add a mood once the day arrives.</string>
+    <string name="journal_add_mark">Add check-in</string>
+</resources>

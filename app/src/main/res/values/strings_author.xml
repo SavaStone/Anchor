@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- More screen: appointments keep their place after the Help section removal. -->
+    <string name="more_section_health">Здоровье</string>
+    <string name="more_author">Об авторе</string>
+    <string name="more_author_body">Канал и профиль на GitHub</string>
+
+    <!-- Author screen: name, role and external links. -->
+    <string name="author_title">Об авторе</string>
+    <string name="author_name">SavaStone</string>
+    <string name="author_role">Автор «Опоры»</string>
+    <string name="author_intro">Создаю приложение для самонаблюдения без рекламы, аккаунтов и обязательного облака.</string>
+    <string name="author_section_links">Ссылки</string>
+    <string name="author_youtube_title">YouTube</string>
+    <string name="author_youtube_subtitle">Канал @SavaStone</string>
+    <string name="author_github_title">GitHub</string>
+    <string name="author_github_subtitle">github.com/SavaStone</string>
+    <string name="author_open_youtube">Открыть канал SavaStone на YouTube</string>
+    <string name="author_open_github">Открыть профиль SavaStone на GitHub</string>
+    <string name="author_link_error">Не удалось открыть ссылку: %1$s</string>
+    <string name="author_footer">Спасибо, что выбрали «Опору».</string>
+
+    <!-- About screen: the source code repository opens in an external app. -->
+    <string name="about_section_repo">Код приложения</string>
+    <string name="about_repo_title">Anchor</string>
+    <string name="about_repo_url">github.com/SavaStone/Anchor</string>
+    <string name="about_author_credit">Автор — SavaStone</string>
+</resources>

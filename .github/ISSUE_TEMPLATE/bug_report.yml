@@ -1,0 +1,41 @@
+name: Ошибка
+description: Сообщить об ошибке на тестовых данных
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Не прикладывайте медицинские записи, пароли, копии личной базы и необработанные логи.
+        Уязвимости отправляйте приватно на savastone32@proton.me, не в Issues.
+  - type: input
+    id: version
+    attributes:
+      label: Версия приложения
+      placeholder: 1.0.0-beta, build 2
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Android и модель устройства
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Шаги воспроизведения
+      description: Используйте вымышленные данные.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Фактическое поведение
+    validations:
+      required: true

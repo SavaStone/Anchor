@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Глубокий хвойный фон: тёплый свет сверху слева, мягкое свечение
+         вокруг знака и спокойное затемнение снизу. -->
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="10"
+                android:startY="-6"
+                android:endX="100"
+                android:endY="112"
+                android:startColor="#FF2B624B"
+                android:centerColor="#FF2A5F4C"
+                android:endColor="#FF0A281E" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="30"
+                android:centerY="16"
+                android:gradientRadius="78"
+                android:startColor="#2BEBCF96"
+                android:centerColor="#0DEBCF96"
+                android:endColor="#00EBCF96" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="52"
+                android:gradientRadius="44"
+                android:startColor="#30B5E2C8"
+                android:centerColor="#12B5E2C8"
+                android:endColor="#00B5E2C8" />
+        </aapt:attr>
+    </path>
+    <path android:pathData="M0,0h108v108h-108z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="54"
+                android:centerY="112"
+                android:gradientRadius="78"
+                android:startColor="#4D04180F"
+                android:centerColor="#1704180F"
+                android:endColor="#0004180F" />
+        </aapt:attr>
+    </path>
+</vector>

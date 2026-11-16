@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="more_title">More</string>
+    <string name="more_name_prompt">What should we call you?</string>
+    <string name="more_name_hint">The name appears on the home screen and in the report</string>
+    <string name="more_name_set_cd">Set name</string>
+    <string name="more_name_edit_cd">Change name</string>
+
+    <string name="more_appointments">Doctor appointments</string>
+
+    <string name="more_section_reminders">Reminders</string>
+    <string name="more_reminders_subtitle">Works offline, no internet needed</string>
+    <string name="more_meds_channel_on">Exact dose times and actions in the notification</string>
+    <string name="more_mood_channel_on">A gentle reminder once a day</string>
+    <string name="more_channel_off">The notification channel is turned off in system settings</string>
+    <string name="more_time_label">Time: %1$s</string>
+    <string name="more_refill_toggle">Refill reminders</string>
+    <string name="more_refill_channel_on">When you are running low on medication</string>
+
+    <string name="more_exact_title">Exact alarms</string>
+    <string name="more_exact_body">Without this permission, reminders may arrive late</string>
+    <string name="more_exact_action">Allow</string>
+    <string name="more_notifications_off_title">Notifications are off</string>
+    <string name="more_notifications_off_body">Allow them in system settings</string>
+    <string name="more_meds_off_title">Medication reminders are off</string>
+    <string name="more_meds_off_body">The “Medications” channel is turned off in system settings</string>
+    <string name="more_refill_off_title">Refill reminders are off</string>
+    <string name="more_refill_off_body">The “Refills” channel is turned off in system settings</string>
+    <string name="more_mood_off_title">Mood reminder is off</string>
+    <string name="more_mood_off_body">The “Daily reminders” channel is turned off in system settings</string>
+    <string name="more_open_channel">Open channel</string>
+
+    <string name="more_section_appearance">Appearance</string>
+    <string name="more_theme">Theme</string>
+    <string name="more_theme_system">System</string>
+    <string name="more_theme_light">Light</string>
+    <string name="more_theme_dark">Dark</string>
+    <string name="more_dynamic_title">System colors</string>
+    <string name="more_dynamic_on">Matches your wallpaper</string>
+    <string name="more_dynamic_unavailable">Unavailable: requires Android 12 or newer</string>
+    <string name="more_left_title">Left-handed mode</string>
+    <string name="more_left_body">Main button on the left</string>
+    <string name="more_lock_title">App lock</string>
+    <string name="more_lock_body">Device biometrics or PIN</string>
+    <string name="more_secure_title">Screenshot protection</string>
+    <string name="more_secure_body">Hide previews in recent apps</string>
+
+    <string name="more_section_home">Home screen</string>
+    <string name="more_home_subtitle">Order and visibility of blocks</string>
+    <string name="more_home_hint">The date header is fixed. You can change order and visibility only for these blocks.</string>
+    <string name="more_home_move_up_cd">Move “%1$s” up</string>
+    <string name="more_home_move_down_cd">Move “%1$s” down</string>
+    <string name="more_home_reset">Reset</string>
+
+    <string name="more_section_tabs">Bottom bar</string>
+    <string name="more_tabs_subtitle">“Today” and “More” always stay</string>
+
+    <string name="more_section_data">Data</string>
+    <string name="more_backup">Backup</string>
+    <string name="more_backup_body">Encrypted copies and WebDAV</string>
+    <string name="more_report">Report for your doctor</string>
+    <string name="more_report_body">PDF summary for a period</string>
+    <string name="more_restore">Restore data</string>
+    <string name="more_restore_point">Restore point from %1$s · %2$s</string>
+    <string name="more_discard_point_title">Delete restore point</string>
+    <string name="more_clear_hint">You can restore them later</string>
+
+    <string name="more_section_about">About the app</string>
+    <string name="more_problem_report">Report a problem</string>
+    <string name="more_problem_report_body">Version, settings, and the last crash</string>
+    <string name="problem_report_subject">Anchor: problem report</string>
+    <string name="problem_report_chooser">Email to %1$s</string>
+    <string name="problem_report_error">Could not open the share sheet or no app can send the report</string>
+    <string name="more_disclaimer">Your data stays on the device. Anchor does not replace treatment and is not a medical device.</string>
+
+    <string name="more_name_dialog_title">Profile name</string>
+    <string name="more_name_label">Name or how to address you</string>
+    <string name="more_save">Save</string>
+    <string name="more_cancel">Cancel</string>
+
+    <string name="more_demo_body">Your current entries stay; an example with medications, mood, and journal is added.</string>
+    <string name="more_demo_action">Add</string>
+    <string name="more_demo_done">Demo data added</string>
+
+    <string name="more_clear_title">Delete all data?</string>
+    <string name="more_clear_body">All entries, settings, and PDF reports will be deleted. A restore point is saved first: you can bring the data back in “More → Data”. Anything you add after deleting stays when you restore.</string>
+    <string name="more_clear_done">All data deleted. You can restore it in “Data”.</string>
+
+    <string name="more_restore_title">Restore data?</string>
+    <string name="more_restore_body">Entries from the restore point will come back. Anything added after deleting stays. The restore point is removed afterwards.</string>
+    <string name="more_restore_action">Restore</string>
+    <string name="more_restore_done">Data restored</string>
+
+    <string name="more_discard_title">Delete restore point?</string>
+    <string name="more_discard_body">The snapshot of deleted data will be erased from the device. Those entries cannot be brought back.</string>
+    <string name="more_discard_done">Restore point deleted</string>
+
+    <string name="more_lock_disable_title">Turn off app lock?</string>
+    <string name="more_lock_disable_body">Anchor will open without confirming your identity. Entries stay on this device only. You can turn protection back on here.</string>
+    <string name="more_lock_disable_action">Turn off</string>
+    <string name="more_lock_keep">Keep</string>
+    <string name="more_lock_help_title">Secure your device first</string>
+    <string name="more_lock_help_body">App lock uses your device biometrics or PIN/pattern. They are not set up yet, so protection cannot be turned on.</string>
+    <string name="more_lock_help_action">Settings</string>
+    <string name="more_later">Later</string>
+
+    <string name="about_title">About Anchor</string>
+    <string name="about_intro">A quiet place to observe yourself. No account, no ads, no mandatory cloud.</string>
+    <string name="about_version">Version %1$s · build %2$d</string>
+    <string name="about_section_privacy">Privacy</string>
+    <string name="about_privacy_accounts_title">No accounts, no analytics</string>
+    <string name="about_privacy_accounts_body">The app sends no data to the developer and requires no sign-up.</string>
+    <string name="about_privacy_local_title">Data on your device</string>
+    <string name="about_privacy_local_body">Mood, medications, and journal live in a local database. Only you can access them.</string>
+    <string name="about_privacy_server_title">Your own server, optional</string>
+    <string name="about_privacy_server_body">WebDAV sync uses your own folder. Files are encrypted before they are sent.</string>
+    <string name="about_section_important">Good to know</string>
+    <string name="about_disclaimer_title">This app is not a medical device.</string>
+    <string name="about_disclaimer_body">Anchor is a self-observation tool. It does not diagnose, prescribe, or replace a doctor’s advice. Do not change your medication schedule on your own. If your condition worsens, contact a professional.</string>
+    <string name="about_footer">Made with respect for people in treatment.</string>
+    <string name="about_credits">Open source components: Kotlin, Jetpack Compose, Material 3, Room, WorkManager, OkHttp.</string>
+</resources>

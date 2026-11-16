@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Plurals: Russian has one/few/many, English only one/other. -->
+    <plurals name="days">
+        <item quantity="one">%1$d день</item>
+        <item quantity="few">%1$d дня</item>
+        <item quantity="many">%1$d дней</item>
+        <item quantity="other">%1$d дня</item>
+    </plurals>
+    <plurals name="doses">
+        <item quantity="one">%1$d приём</item>
+        <item quantity="few">%1$d приёма</item>
+        <item quantity="many">%1$d приёмов</item>
+        <item quantity="other">%1$d приёма</item>
+    </plurals>
+    <plurals name="entries">
+        <item quantity="one">%1$d запись</item>
+        <item quantity="few">%1$d записи</item>
+        <item quantity="many">%1$d записей</item>
+        <item quantity="other">%1$d записи</item>
+    </plurals>
+    <plurals name="medications">
+        <item quantity="one">%1$d лекарство</item>
+        <item quantity="few">%1$d лекарства</item>
+        <item quantity="many">%1$d лекарств</item>
+        <item quantity="other">%1$d лекарства</item>
+    </plurals>
+    <plurals name="duration_days">
+        <item quantity="one">%1$d дн.</item>
+        <item quantity="few">%1$d дн.</item>
+        <item quantity="many">%1$d дн.</item>
+        <item quantity="other">%1$d дн.</item>
+    </plurals>
+    <plurals name="duration_hours">
+        <item quantity="one">%1$d ч</item>
+        <item quantity="few">%1$d ч</item>
+        <item quantity="many">%1$d ч</item>
+        <item quantity="other">%1$d ч</item>
+    </plurals>
+    <plurals name="duration_minutes">
+        <item quantity="one">%1$d мин</item>
+        <item quantity="few">%1$d мин</item>
+        <item quantity="many">%1$d мин</item>
+        <item quantity="other">%1$d мин</item>
+    </plurals>
+
+    <string name="duration_hours_minutes">%1$d ч %2$d мин</string>
+    <string name="common_dash">—</string>
+
+    <string name="home_block_mood">Настроение</string>
+    <string name="home_block_meds">Лекарства</string>
+    <string name="home_block_journal">Дневник</string>
+    <string name="home_block_appointment">Ближайший приём</string>
+
+    <string name="stop_doctor">По решению врача</string>
+    <string name="stop_course">Курс завершён</string>
+    <string name="stop_side_effects">Побочные эффекты</string>
+    <string name="stop_other">Другая причина</string>
+
+    <string name="tag_joy">радость</string>
+    <string name="tag_calm">спокойствие</string>
+    <string name="tag_interest">интерес</string>
+    <string name="tag_gratitude">благодарность</string>
+    <string name="tag_hope">надежда</string>
+    <string name="tag_pride">гордость</string>
+    <string name="tag_love">любовь</string>
+    <string name="tag_anxiety">тревога</string>
+    <string name="tag_fear">страх</string>
+    <string name="tag_panic">паника</string>
+    <string name="tag_sadness">грусть</string>
+    <string name="tag_longing">тоска</string>
+    <string name="tag_anger">злость</string>
+    <string name="tag_irritation">раздражение</string>
+    <string name="tag_shame">стыд</string>
+    <string name="tag_guilt">вина</string>
+    <string name="tag_loneliness">одиночество</string>
+    <string name="tag_apathy">апатия</string>
+    <string name="tag_fatigue">усталость</string>
+    <string name="tag_confusion">растерянность</string>
+
+    <string name="tag_headache">головная боль</string>
+    <string name="tag_nausea">тошнота</string>
+    <string name="tag_dizziness">головокружение</string>
+    <string name="tag_tremor">тремор</string>
+    <string name="tag_drowsiness">сонливость</string>
+    <string name="tag_insomnia">бессонница</string>
+    <string name="tag_dry_mouth">сухость во рту</string>
+    <string name="tag_sweating">потливость</string>
+    <string name="tag_palpitations">сердцебиение</string>
+    <string name="tag_weight_gain">набор веса</string>
+    <string name="tag_appetite_loss">нет аппетита</string>
+    <string name="tag_appetite_gain">повышен аппетит</string>
+    <string name="tag_low_libido">снижение либидо</string>
+    <string name="tag_slowness">заторможенность</string>
+    <string name="tag_restless_legs">беспокойные ноги</string>
+    <string name="tag_constipation">запор</string>
+    <string name="tag_diarrhea">диарея</string>
+    <string name="tag_muscle_pain">мышечная боль</string>
+    <string name="meds_schedule_daily">Каждый день</string>
+    <string name="meds_schedule_as_needed">По потребности</string>
+    <string name="meds_schedule_interval">Каждые %1$s</string>
+    <string name="meds_schedule_with_times">%1$s · %2$s</string>
+    <string name="color_blue">Синий</string>
+    <string name="color_green">Зелёный</string>
+    <string name="color_red">Красный</string>
+    <string name="color_orange">Оранжевый</string>
+    <string name="color_yellow">Жёлтый</string>
+    <string name="color_purple">Фиолетовый</string>
+    <string name="color_pink">Розовый</string>
+    <string name="color_teal">Бирюзовый</string>
+    <string name="color_brown">Коричневый</string>
+    <string name="color_gray">Серый</string>
+    <string name="errors_unknown">Неизвестная ошибка</string>
+</resources>

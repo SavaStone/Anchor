@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Common UI atoms -->
+    <string name="common_back">Назад</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="common_loading">Загрузка</string>
+    <string name="common_no_data">Нет данных</string>
+    <string name="common_pick_time">Выберите время</string>
+    <string name="common_change_date_a11y">Изменить дату: %1$s</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_level_of_five">%1$d из 5</string>
+    <string name="a11y_calendar_today">%1$s, сегодня</string>
+    <string name="a11y_calendar_future">%1$s, будущий день</string>
+    <string name="a11y_calendar_mood">%1$s, настроение %2$d из 5, %3$s</string>
+    <string name="a11y_calendar_moods">%1$s, настроения за день: %2$s</string>
+    <string name="a11y_calendar_no_mood">%1$s, без отметки</string>
+    <string name="a11y_calendar_selected">%1$s, выбрано</string>
+    <string name="a11y_dose_named">%1$s: %2$s</string>
+    <string name="a11y_dose_overflow">Ещё: %1$s, %2$s</string>
+
+    <!-- Calendar -->
+    <string name="calendar_prev_month">Предыдущий месяц</string>
+    <string name="calendar_next_month">Следующий месяц</string>
+    <string name="calendar_mood_scale_a11y">Шкала настроения: 1 — ужасно, 5 — супер</string>
+
+    <!-- Dose line -->
+    <string name="dose_line_taken">%1$s · принято</string>
+    <string name="dose_line_taken_at">%1$s · принято в %2$s</string>
+    <string name="dose_line_snoozed">%1$s · отложено до %2$s</string>
+    <string name="dose_line_join">%1$s · %2$s</string>
+
+    <!-- Medication and dose actions -->
+    <string name="actions_edit_time">Изменить время</string>
+    <string name="actions_undo">Вернуть в ожидание</string>
+    <string name="actions_delete_dose">Удалить запись</string>
+    <string name="actions_pause">Приостановить приём</string>
+    <string name="actions_discontinue">Прекратить приём</string>
+    <string name="actions_edit_medication">Изменить лекарство</string>
+    <string name="actions_resume">Возобновить приём</string>
+    <string name="actions_delete_medication">Удалить лекарство</string>
+    <string name="actions_delete_dose_title">Удалить запись?</string>
+    <string name="actions_delete_dose_body">Приём «%1$s» в %2$s будет удалён из истории. Если запас учитывается, единица вернётся.</string>
+    <string name="actions_delete_med_title">Удалить лекарство?</string>
+    <string name="actions_delete_med_body">Расписание и будущие напоминания будут удалены. История приёмов останется.</string>
+
+    <!-- Today screen -->
+    <string name="today_snackbar_taken">%1$s: принято</string>
+    <string name="today_snackbar_skipped">%1$s: пропущено</string>
+    <string name="today_snackbar_undo">Отменить</string>
+    <string name="today_stop_title">Прекратить приём?</string>
+    <string name="today_stop_body">«%1$s» больше не будет напоминать о приёме. История приёмов останется.</string>
+    <string name="today_meds_empty_body">Расписание, дозы и напоминания будут под рукой.</string>
+    <string name="today_no_doses">На сегодня приёмов нет</string>
+    <string name="today_appointment_today">сегодня</string>
+    <string name="today_appointment_tomorrow">завтра</string>
+    <plurals name="today_appointment_in_days">
+        <item quantity="one">через %1$d день</item>
+        <item quantity="few">через %1$d дня</item>
+        <item quantity="many">через %1$d дней</item>
+        <item quantity="other">через %1$d дня</item>
+    </plurals>
+    <string name="today_appointment_time">%1$s, %2$s</string>
+    <string name="today_appointment_time_place">%1$s, %2$s · %3$s</string>
+    <string name="today_journal_subtitle">Записи, мысли и то, что хочется сохранить</string>
+    <string name="today_mood_question">Как вы сегодня?</string>
+    <string name="today_sleep">Сон: %1$s</string>
+    <string name="today_anxiety">Тревога: %1$d/10</string>
+    <string name="today_stats_join">%1$s · %2$s</string>
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Опора</string>
+
+    <string name="tab_today">Сегодня</string>
+    <string name="tab_mood">Настроение</string>
+    <string name="tab_meds">Лекарства</string>
+    <string name="tab_journal">Дневник</string>
+    <string name="tab_more">Ещё</string>
+
+    <string name="channel_meds">Лекарства</string>
+    <string name="channel_meds_desc">Напоминания о времени приёма</string>
+    <string name="channel_refill">Пополнение запаса</string>
+    <string name="channel_refill_desc">Когда таблетки заканчиваются</string>
+    <string name="channel_daily">Ежедневные напоминания</string>
+    <string name="channel_daily_desc">Мягкое напоминание отметить состояние</string>
+    <string name="channel_appointments">Приёмы у врача</string>
+    <string name="channel_appointments_desc">Напоминания о встречах</string>
+
+    <string name="notif_med_title">Приём: %1$s</string>
+    <string name="notif_med_public_title">Напоминание о лекарстве</string>
+    <string name="notif_med_public_text">Нажмите, чтобы открыть «Опору»</string>
+    <string name="notif_action_taken">Принял</string>
+    <string name="notif_action_snooze">Отложить 10 мин</string>
+    <string name="notif_action_skip">Не принял</string>
+    <string name="notif_refill_title">Запас заканчивается</string>
+    <string name="notif_refill_text">%1$s: осталось %2$s</string>
+    <string name="notif_refill_big">%1$s %2$s: осталось %3$s. Порог напоминания — %4$s.</string>
+    <string name="notif_daily_title">Как вы сегодня?</string>
+    <string name="notif_daily_text">Отметьте настроение — это займёт минуту</string>
+    <string name="notif_appointment_title">Приём: %1$s</string>
+
+    <string name="mood_1">Очень тяжело</string>
+    <string name="mood_2">Тяжело</string>
+    <string name="mood_3">Средне</string>
+    <string name="mood_4">Хорошо</string>
+    <string name="mood_5">Отлично</string>
+    <string name="mood_a11y">Настроение: %1$s</string>
+
+    <string name="dose_status_skipped">Без приёма</string>
+    <string name="dose_skip_action">Пропустить</string>
+    <string name="dose_status_missed">Приём не отмечен</string>
+    <string name="dose_status_overdue">Время приёма прошло</string>
+    <string name="dose_taken_a11y">Принято: %1$s. Нажмите, чтобы отменить</string>
+    <string name="dose_taken_prn_a11y">Принято: %1$s</string>
+    <string name="dose_take_a11y">Отметить приём</string>
+    <string name="dose_take_late_a11y">Отметить приём</string>
+    <string name="dose_next_waiting">Ждёт отметки: %1$s</string>
+    <string name="dose_next_missed">Приём не отмечен: %1$s</string>
+    <string name="dose_next">Далее: %1$s</string>
+    <string name="streak_empty">Полных дней пока нет. Когда все приёмы дня отмечены, появляется огонёк.</string>
+    <string name="streak_no_data">Здесь появятся огоньки за дни с полной серией.</string>
+    <string name="streak_hint">Огонёк гаснет, если день остался без отметок. Если это было ошибкой, день можно вернуть.</string>
+    <string name="streak_none">нет серии</string>
+    <string name="resolved_doses">Отмеченные приёмы</string>
+    <string name="stock_low_title">Запас заканчивается</string>
+    <string name="stock_low_hint">Количество можно изменить в карточке лекарства.</string>
+    <string name="action_edit">Изменить</string>
+
+    <string name="journal_empty_title">В дневнике пока пусто</string>
+    <string name="journal_empty_body">Здесь можно записывать мысли, события и то, что хочется не забыть.</string>
+    <string name="chart_need_two">Для графика нужны хотя бы две отметки</string>
+    <string name="insight_best_day">Легче всего</string>
+    <string name="more_demo">Добавить демо-данные</string>
+    <string name="more_demo_hint">Посмотреть пример</string>
+    <string name="more_clear">Удалить все данные</string>
+    <string name="more_discard_point">Удалить снимок без восстановления</string>
+    <string name="more_med_toggle">Напоминания о лекарствах</string>
+    <string name="more_mood_toggle">Напоминание о настроении</string>
+    <string name="backup_upload">Загрузить на сервер</string>
+    <string name="backup_download">Скачать с сервера</string>
+    <string name="appt_name_required">Укажите название приёма</string>
+    <string name="today_details">Подробнее</string>
+    <string name="today_add_details">Добавить детали</string>
+    <string name="today_all_meds">Все лекарства</string>
+    <string name="empty_med_title">Начните с лекарства</string>
+    <string name="add_medication">Добавить лекарство</string>
+
+    <string name="day_full">полный день</string>
+    <string name="stock_low_line">Запас: %1$s&#160;%2$s · заканчивается</string>
+    <string name="history_empty_body">Здесь появятся принятые, отложенные и неотмеченные приёмы.</string>
+    <string name="more_demo_confirm">Добавить демо-данные?</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="action_choose">Выбрать</string>
+    <string name="action_delete">Удалить</string>
+    <string name="stock_low_short">%1$s&#160;%2$s · заканчивается</string>
+
+    <string name="restore_day_title">Засчитать день?</string>
+    <string name="restore_day_body">За %1$s отмечены не все приёмы. Если они появились случайно, день снова войдёт в серию.</string>
+    <string name="restore_day_action">Засчитать день</string>
+    <string name="forgiven_day_title">Убрать день из серии?</string>
+    <string name="forgiven_day_body">День снова станет днём без полной серии.</string>
+    <string name="forgiven_day_action">Убрать из серии</string>
+    <string name="day_forgiven">день засчитан в серию</string>
+    <string name="day_incomplete">день ещё не завершён</string>
+
+    <string name="insight_empty">Добавьте больше отметок, чтобы увидеть закономерности.</string>
+    <string name="insight_need_more">Несколько отметок — и здесь появится динамика.</string>
+    <string name="insight_better">За неделю стало легче на %1$d%% — это заметный сдвиг.</string>
+    <string name="insight_lower">Настроение ниже на %1$d%% за неделю. Это может быть поводом позаботиться о себе.</string>
+    <string name="insight_stable">Настроение держится примерно на одном уровне.</string>
+
+    <string name="language_title">Язык</string>
+    <string name="language_dialog_title">Язык интерфейса</string>
+    <string name="language_system">Системный</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">English</string>
+    <string name="action_close">Закрыть</string>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="demo_med_sertraline">Sertraline</string>
+    <string name="demo_med_lamotrigine">Lamotrigine</string>
+    <string name="demo_med_quetiapine">Quetiapine</string>
+    <string name="demo_med_atarax">Atarax</string>
+    <string name="demo_dosage_50">50 mg</string>
+    <string name="demo_dosage_25">25 mg</string>
+    <string name="demo_purpose_depression">depressive episode</string>
+    <string name="demo_purpose_mood_stabilizer">mood stabilizer</string>
+    <string name="demo_purpose_sleep">sleep</string>
+    <string name="demo_purpose_anxiety_prn">anxiety, as needed</string>
+
+    <string name="demo_note_hard_evening">A hard evening, but I called a friend and it got easier.</string>
+    <string name="demo_note_first_walk">First walk in a week. The sun helped.</string>
+    <string name="demo_note_before_visit">Anxious before the doctor visit, so I wrote down my thoughts in advance.</string>
+    <string name="demo_note_calm_day">A calm day. Managed to do what I planned.</string>
+    <string name="demo_note_low_energy">Low energy. I let myself rest without guilt.</string>
+
+    <string name="demo_journal_1_title">What helped today</string>
+    <string name="demo_journal_1_body">Woke up with a heavy head but went for a short walk anyway. It helped to stop thinking about tasks and just look at the trees. The evening felt calmer.</string>
+    <string name="demo_journal_1_tags">observation,practice</string>
+    <string name="demo_journal_2_title">Thoughts before the appointment</string>
+    <string name="demo_journal_2_body">Things to discuss with my doctor: 1) sleep is still unstable; 2) anxiety is more frequent in the evening; 3) ask about a blood test. Wrote it down so I would not forget.</string>
+    <string name="demo_journal_2_tags">doctor,questions</string>
+    <string name="demo_journal_3_title">A bad evening</string>
+    <string name="demo_journal_3_body" tools:ignore="TypographyDashes">It hit close to midnight. I wrote in a support chat and breathed 4-7-8. Not perfect, but I got through it. The morning was easier.</string>
+    <string name="demo_journal_3_tags">anxiety,coping</string>
+    <string name="demo_journal_4_title">A small win</string>
+    <string name="demo_journal_4_body">Finally cleared the email I had put off for two weeks. I feel relieved and a little proud.</string>
+    <string name="demo_journal_4_tags">progress</string>
+    <string name="demo_journal_5_title">Tomorrow\'s list</string>
+    <string name="demo_journal_5_body">— call the pharmacy\n— a 20-minute walk\n— do not forget the journal\n\nNothing heroic. Enough.</string>
+    <string name="demo_journal_5_tags">plans</string>
+    <string name="demo_journal_6_title">About sleep</string>
+    <string name="demo_journal_6_body">Went to bed at 23:30, woke up twice. Quetiapine helped me fall asleep faster than yesterday. A little foggy in the morning.</string>
+    <string name="demo_journal_6_tags">sleep</string>
+
+    <string name="demo_appt_psychiatrist">Psychiatrist</string>
+    <string name="demo_doctor_elena">Dr. Elena Sergeyeva</string>
+    <string name="demo_place_dispensary">Community clinic, room 214</string>
+    <string name="demo_appt_psychiatrist_notes">Bring the journal and a list of questions</string>
+    <string name="demo_appt_therapy">Psychotherapy</string>
+    <string name="demo_doctor_anna">Dr. Anna Igorevna</string>
+    <string name="demo_place_online">online</string>
+    <string name="demo_appt_therapy_notes">Topic: boundaries and anxiety</string>
+</resources>

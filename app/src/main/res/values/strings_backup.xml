@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_title">Резервные копии</string>
+    <string name="backup_ack">Понятно</string>
+    <string name="backup_progress_a11y">Идёт операция с резервной копией</string>
+    <string name="backup_section_device">На этом устройстве</string>
+    <string name="backup_encryption_hint">Экспорт с паролем шифруется на устройстве. Ключ есть только у вас — без парольной фразы файл не открыть.</string>
+
+    <string name="backup_export_import_title">Экспорт и импорт</string>
+    <string name="backup_export_import_desc">Зашифрованный файл можно хранить в любом месте: на флешке, в своём облаке, отправить доверенному человеку.</string>
+    <string name="backup_export_with_password">Экспорт с паролем</string>
+    <string name="backup_import_from_file">Импорт из файла</string>
+    <string name="backup_export_json">Экспорт JSON без шифрования</string>
+    <string name="backup_json_hint">JSON удобен для переноса в другую программу, но не защищён паролем. Не оставляйте его в открытом доступе.</string>
+
+    <string name="backup_auto_title">Автобэкап в папку</string>
+    <string name="backup_auto_desc">Копия при изменениях (не чаще раза в час) и раз в сутки · храним 7 последних файлов</string>
+    <string name="backup_auto_folder_title">Папка для автобэкапа</string>
+    <string name="backup_auto_folder_none">Папка не выбрана</string>
+    <string name="backup_auto_folder_choose">Выбрать папку</string>
+    <string name="backup_auto_folder_change">Сменить папку</string>
+    <string name="backup_auto_folder_remove">Убрать</string>
+    <string name="backup_auto_folder_saved">Папка автобэкапа сохранена</string>
+    <string name="backup_auto_folder_removed">Папка автобэкапа убрана</string>
+    <string name="backup_auto_password_title">Пароль автобэкапа</string>
+    <string name="backup_auto_password_desc">Отдельный пароль, не связанный с сервером. Запомните его: без него копию после переустановки не открыть.</string>
+    <string name="backup_auto_password_saved">Пароль автобэкапа сохранён</string>
+    <string name="backup_auto_password_save_failed">Не удалось сохранить пароль: ключ устройства недоступен.</string>
+    <string name="backup_auto_password_state_set">Пароль задан</string>
+    <string name="backup_auto_password_state_missing">Пароль не задан</string>
+    <string name="backup_auto_password_state_lost">Пароль не открывается ключом устройства</string>
+    <string name="backup_auto_password_set_action">Задать пароль</string>
+    <string name="backup_auto_password_change">Сменить пароль</string>
+    <string name="backup_auto_not_configured">Автобэкап не настроен</string>
+    <string name="backup_auto_not_configured_hint">Выберите папку и задайте пароль — тогда копии будут создаваться сами.</string>
+    <string name="backup_auto_status_last">Последняя копия: %1$s</string>
+    <string name="backup_auto_status_never">Копий в папке ещё не было</string>
+    <string name="backup_auto_status_error">Ошибка: %1$s</string>
+    <string name="backup_auto_error_folder">папка недоступна, разрешение отозвано — выберите её заново</string>
+    <string name="backup_auto_error_password_missing">не задан пароль</string>
+    <string name="backup_auto_error_password_lost">пароль больше не открывается ключом устройства — задайте его заново</string>
+    <string name="backup_auto_error_write">не удалось записать файл: папка недоступна или нет места</string>
+    <string name="backup_auto_saved_now">Копия сохранена в папку</string>
+    <string name="backup_auto_create_now">Сохранить копию сейчас</string>
+    <string name="backup_auto_empty">В выбранной папке пока нет копий.</string>
+    <string name="backup_auto_note">Файлы лежат в выбранной папке и переживают удаление приложения. Пароль хранится только на устройстве, в зашифрованном виде.</string>
+    <string name="backup_auto_files_title">Копии в папке</string>
+    <string name="backup_auto_restore_hint">Для восстановления нужен пароль автобэкапа.</string>
+
+    <string name="backup_channel_title">Переустановка или смена канала (APK ↔ Google Play)</string>
+    <string name="backup_channel_summary">Подписи Google Play и APK разные — обновить приложение поверх нельзя. Данные сохранит копия.</string>
+    <string name="backup_channel_step1">1. Сделайте копию: «Сохранить копию сейчас» или «Экспорт с паролем». Запомните пароль.</string>
+    <string name="backup_channel_step2">2. Удалите приложение. Данные внутри приложения удалятся — это нормально.</string>
+    <string name="backup_channel_step3">3. Установите APK или версию из Google Play заново и восстановите копию из папки или из файла.</string>
+    <string name="backup_channel_warning">Без копии данные не вернуть: облачный бэкап Android отключён намеренно.</string>
+    <string name="backup_channel_expand">Как переустановить</string>
+    <string name="backup_channel_collapse">Свернуть</string>
+    <string name="backup_file_meta">%1$s · %2$s</string>
+    <string name="backup_restore_action">Восстановить</string>
+    <string name="backup_restore_a11y">Восстановить копию от %1$s</string>
+
+    <string name="backup_export_done">Зашифрованная копия сохранена</string>
+    <string name="backup_json_export_done">JSON-копия сохранена</string>
+    <string name="backup_error_save">Не удалось сохранить копию. Проверьте свободное место и попробуйте ещё раз.</string>
+    <string name="backup_error_decrypt">Не удалось расшифровать копию. Проверьте пароль и попробуйте ещё раз.</string>
+    <string name="backup_error_read_file">Не удалось прочитать файл</string>
+
+    <string name="backup_size_b">%1$s Б</string>
+    <string name="backup_size_kb">%1$s КБ</string>
+    <string name="backup_size_mb">%1$s МБ</string>
+
+    <string name="backup_passphrase_title">Парольная фраза</string>
+    <string name="backup_passphrase_desc">Придумайте фразу не короче 8 символов. Запомните её: восстановить файл без неё невозможно.</string>
+    <string name="backup_passphrase_repeat">Повторите</string>
+    <string name="backup_passphrase_mismatch">Фразы не совпадают</string>
+    <string name="backup_passphrase_required">Введите парольную фразу</string>
+    <string name="backup_passphrase_min">Для экспорта нужно минимум 8 символов</string>
+    <string name="backup_import_pass_title">Копия зашифрована</string>
+    <string name="backup_import_pass_desc">Введите парольную фразу, с которой создавалась копия.</string>
+    <string name="backup_continue">Продолжить</string>
+    <string name="backup_cancel">Отмена</string>
+
+    <string name="backup_json_confirm_title">Экспортировать без шифрования?</string>
+    <string name="backup_json_confirm_body">Файл JSON не защищён паролем: любой, у кого он окажется, сможет прочитать настроение, лекарства и дневник. Храните его отдельно и удаляйте после переноса.</string>
+    <string name="backup_json_confirm_action">Экспортировать</string>
+
+    <string name="webdav_section_title">Свой сервер (WebDAV)</string>
+    <string name="webdav_section_subtitle">Необязательно · Nextcloud, Яндекс.Диск, Synology и другие</string>
+    <string name="webdav_configure">Настроить</string>
+    <string name="webdav_collapse">Свернуть</string>
+    <string name="webdav_optional_note">Сервер полностью необязателен: «Опора» работает и без него. Нужен только адрес https:// — Android блокирует незашифрованный HTTP.</string>
+    <string name="webdav_key_warning">Ключ шифрования WebDAV изменился. Пароли сервера и копии нужно ввести заново; старые архивы откроются только со старым ключом или паролем.</string>
+    <string name="webdav_open_settings">Открыть настройки сервера</string>
+    <string name="webdav_url_label">Адрес папки</string>
+    <string name="webdav_user_label">Логин</string>
+    <string name="webdav_password_label">Пароль</string>
+    <string name="webdav_app_password">Пароль приложения</string>
+    <string name="webdav_keep_empty">Оставьте пустым, чтобы не менять</string>
+    <string name="webdav_show_password">Показать пароль</string>
+    <string name="webdav_hide_password">Скрыть пароль</string>
+    <string name="webdav_backup_password_label">Пароль копии</string>
+    <string name="webdav_backup_password_new">Отдельный пароль для файлов</string>
+    <string name="webdav_show_backup_password">Показать пароль копии</string>
+    <string name="webdav_hide_backup_password">Скрыть пароль копии</string>
+
+    <string name="webdav_error_url_required">Укажите URL папки</string>
+    <string name="webdav_error_https">Нужен адрес https://…: Android блокирует HTTP.</string>
+    <string name="webdav_error_user_required">Укажите логин</string>
+    <string name="webdav_error_password_required">Введите пароль приложения</string>
+    <string name="webdav_error_backup_password_required">Задайте пароль копии</string>
+    <string name="webdav_save">Проверить и сохранить</string>
+    <string name="webdav_saved">Сервер доступен, настройки сохранены</string>
+    <string name="webdav_error_connect">Не удалось подключиться к серверу. Проверьте адрес, логин и пароль.</string>
+    <string name="webdav_upload_done">Копия загружена на сервер</string>
+    <string name="webdav_error_upload">Не удалось загрузить копию. Проверьте подключение и настройки сервера.</string>
+    <string name="webdav_error_download">Не удалось скачать копию. Проверьте подключение и настройки сервера.</string>
+    <string name="webdav_need_save_hint">Загрузка и скачивание станут доступны после проверки и сохранения сервера.</string>
+    <string name="webdav_need_backup_pass_hint">Задайте отдельный пароль копии: им шифруются файлы на сервере.</string>
+    <string name="webdav_auto_sync">Автосинхронизация</string>
+    <string name="webdav_auto_sync_desc">Загружать копию при изменениях (раз в 6 часов, только при сети)</string>
+    <string name="webdav_last_sync">Последняя синхронизация: %1$s</string>
+    <string name="webdav_encryption_note">Файл на сервере шифруется отдельным паролем копии. Пароль WebDAV — только для транспорта. При смене пароля копии старые архивы потребуют старый пароль.</string>
+    <string name="webdav_disable">Отключить сервер</string>
+    <string name="webdav_disable_confirm_title">Отключить сервер?</string>
+    <string name="webdav_disable_confirm_body">«Опора» забудет адрес, логин и пароль WebDAV и выключит автосинхронизацию. Файлы, уже загруженные на сервер, останутся там.</string>
+    <string name="webdav_disable_confirm_action">Отключить</string>
+    <string name="webdav_disabled">Сервер отключён</string>
+    <string name="webdav_error_disable">Не удалось отключить сервер. Попробуйте ещё раз.</string>
+
+    <string name="restore_progress_title">Восстановление копии</string>
+    <string name="restore_stage_snapshot">Сначала сохраняем копию текущих данных…</string>
+    <string name="restore_stage_writing">Очищаем и записываем данные…</string>
+    <string name="restore_stage_rearming">Возвращаем напоминания…</string>
+    <string name="restore_cancel">Отменить восстановление</string>
+    <string name="restore_success">Копия восстановлена: %1$s. Прежние данные сохранены в точке восстановления.</string>
+    <string name="restore_cancelled">Восстановление отменено. Данные и напоминания остались в согласованном состоянии.</string>
+    <string name="restore_note">Перед восстановлением «Опора» сохранит точку восстановления текущих данных. Импорт заменит данные на устройстве.</string>
+    <string name="restore_confirm_title">Восстановить копию?</string>
+    <string name="restore_confirm_body">Сначала сохраним копию текущих данных: %1$s. Затем заменим записи: %2$s. Текущие данные на устройстве будут удалены. Продолжить?</string>
+    <string name="restore_auto_confirm_title">Восстановить автокопию?</string>
+    <string name="restore_auto_confirm_body">Сначала сохраним копию текущих данных: %1$s. Затем файл %2$s заменит текущие данные.</string>
+
+    <string name="restore_found_title">Найдена резервная копия</string>
+    <string name="restore_found_folder_body">Копия от %1$s в папке автобэкапа. Восстановить данные?</string>
+    <string name="restore_found_downloads_body">В «Загрузках» есть копия от %1$s. Выбрать файл и восстановить?</string>
+    <string name="restore_found_restore">Восстановить</string>
+    <string name="restore_found_choose">Выбрать файл</string>
+    <string name="restore_found_pick_title">Восстановить данные из копии?</string>
+    <string name="restore_found_pick_body">Если вы уже пользовались «Опорой» или переустанавливали приложение, выберите файл копии .opora и введите пароль. Если нет — начните с чистого листа.</string>
+    <string name="restore_found_later">Позже</string>
+    <string name="restore_prompt_password_hint">Введите пароль, с которым создавалась копия.</string>
+    <string name="restore_running">Восстанавливаем данные…</string>
+    <string name="restore_summary_title">Данные восстановлены</string>
+    <string name="restore_summary_body">Лекарств: %1$d · доз: %2$d · отметок: %3$d · записей дневника: %4$d</string>
+    <string name="restore_summary_ok">Готово</string>
+</resources>

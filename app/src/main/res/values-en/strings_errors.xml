@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="errors_open_file_write">Could not open the file for writing</string>
+    <string name="errors_passphrase_required">This file is encrypted — a passphrase is required</string>
+    <string name="errors_wrong_passphrase">Wrong passphrase or damaged file</string>
+    <string name="errors_newer_version">This backup was created by a newer version of the app</string>
+    <string name="errors_write_file">Could not write the file</string>
+    <string name="errors_file_too_large">File is too large: %1$d MB maximum</string>
+    <string name="errors_read_file">Could not read the file</string>
+    <string name="errors_restore_point_missing">Restore point not found</string>
+    <string name="errors_restore_point_read">Could not read the restore point</string>
+    <string name="errors_restore_point_newer">This restore point was created by a newer version of the app</string>
+    <string name="errors_key_changed">The encryption key changed after a reset or reinstall. Older auto-backups and the restore point can only be opened with the old key.</string>
+    <string name="errors_not_a_backup">This file does not look like an Anchor backup</string>
+    <string name="errors_not_encrypted">This file is not an encrypted Anchor backup</string>
+    <string name="errors_restore_failed">Could not restore the data. Please try again.</string>
+    <string name="errors_webdav_not_configured">Set up WebDAV first</string>
+    <string name="errors_backup_password_required">Set a backup password: the WebDAV password is used for transport only</string>
+    <string name="errors_no_server_backup">There is no backup on the server yet</string>
+    <string name="errors_server_decrypt">Could not decrypt the backup from the server. Check the backup password; older files may have been created with the WebDAV password.</string>
+    <string name="errors_server_not_found">Could not find the server. Check the URL and your connection.</string>
+    <string name="errors_server_unreachable">The server is not responding. Check the address and availability.</string>
+    <string name="errors_server_timeout">The server did not respond in time. Check your connection and try again.</string>
+    <string name="errors_connection_interrupted">The connection was interrupted. Check your connection and try again.</string>
+    <string name="errors_secure_connection">Could not establish a secure connection. Check the server certificate.</string>
+    <string name="errors_bad_folder_url">Invalid folder URL. An https:// address is required: Android blocks unencrypted HTTP connections.</string>
+    <string name="errors_network">Network error. Check your internet connection.</string>
+    <string name="errors_connect">Could not connect to the server</string>
+    <string name="errors_auth_rejected">The server rejected the login or password (%1$d)</string>
+    <string name="errors_server_code">The server responded %1$d</string>
+    <string name="errors_folder_access">No access to the folder (%1$d)</string>
+    <string name="errors_folder_create">Could not create the folder on the server (%1$d)</string>
+    <string name="errors_upload">Upload failed: %1$d</string>
+    <string name="errors_download">Download failed: %1$d</string>
+    <string name="errors_sync_failed">Could not sync the backup. Check the server settings.</string>
+</resources>

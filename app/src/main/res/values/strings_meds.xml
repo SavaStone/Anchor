@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="meds_retry">Повторить</string>
+    <string name="meds_back">Назад</string>
+
+    <string name="meds_error_title">Не удалось загрузить лекарства</string>
+    <string name="meds_error_body">Данные остаются на устройстве. Попробуйте открыть список ещё раз.</string>
+    <string name="meds_empty_title">Лекарств пока нет</string>
+    <string name="meds_empty_body">Добавьте лекарство, укажите дозу и время — «Опора» напомнит о приёме.</string>
+    <string name="meds_empty_active_title">Нет активных лекарств</string>
+    <string name="meds_empty_active_body">Добавьте лекарство — «Опора» напомнит о приёме.</string>
+
+    <string name="meds_tab_day">День</string>
+    <string name="meds_tab_list">Список</string>
+    <string name="meds_tab_archive">Архив</string>
+    <string name="meds_tab_history">История</string>
+    <string name="meds_tab_today_desc">Приёмы сегодня</string>
+    <string name="meds_tab_list_desc">Список лекарств</string>
+    <string name="meds_tab_history_desc">История приёмов</string>
+
+    <string name="meds_today_header">Приёмы сегодня</string>
+    <string name="meds_taken_of">%1$d из %2$d</string>
+    <string name="meds_taken_of_a11y" tools:ignore="PluralsCandidate">Принято %1$d из %2$d</string>
+
+    <string name="meds_dose_today_at">%1$s, сегодня в %2$s</string>
+    <string name="meds_next_dose_line">Далее: %1$s, %2$s в %3$s</string>
+    <string name="meds_day_today">сегодня</string>
+    <string name="meds_day_tomorrow">завтра</string>
+    <string name="meds_day_today_label">Сегодня</string>
+    <string name="meds_day_yesterday_label">Вчера</string>
+
+    <string name="meds_snack_taken">%1$s: принято</string>
+    <string name="meds_snack_skipped">%1$s: пропущено</string>
+    <string name="meds_snack_undo">Отменить</string>
+    <string name="meds_snack_stopped">%1$s: приём прекращён</string>
+    <string name="meds_snack_restore">Вернуть</string>
+    <string name="meds_snack_course_over">%1$s: курс закончился. Измените дату окончания.</string>
+    <string name="meds_snack_resumed">%1$s: приём возобновлён</string>
+    <string name="meds_snack_prn_logged">%1$s: приём записан в %2$s</string>
+
+    <string name="meds_section_stopped">Прекращённые</string>
+    <string name="meds_section_paused">Приостановленные</string>
+    <string name="meds_status_stopped">Прекращён %1$s</string>
+    <string name="meds_status_paused">Приостановлен</string>
+
+    <string name="meds_history_empty_title">История пуста</string>
+    <string name="meds_history_caption">Последние 30 дней</string>
+    <string name="meds_fab_add">Добавить</string>
+
+    <string name="meds_stop_title">Прекратить приём?</string>
+    <string name="meds_stop_body">%1$s: напоминания выключатся. Принятые дозы останутся в истории приёмов.</string>
+    <string name="meds_stop_reason">Причина (необязательно)</string>
+    <string name="meds_stop_reason_none">Не указана</string>
+    <string name="meds_stop_reason_clear">Без причины</string>
+    <string name="meds_stop_confirm">Прекратить</string>
+    <string name="meds_stop_cancel">Продолжить</string>
+    <string name="meds_selected">Выбрано</string>
+
+    <string name="meds_no_doses_today">На сегодня приёмов нет</string>
+    <string name="meds_no_doses_planned">Плановых приёмов по расписанию нет.</string>
+    <string name="meds_no_doses_both">%1$s Записи по потребности — ниже.</string>
+    <string name="meds_prn_today_line">Сегодня: %1$d · последний в %2$s</string>
+
+    <string name="meds_expanded">развёрнуто</string>
+    <string name="meds_collapsed">свёрнуто</string>
+    <string name="meds_expand">Развернуть</string>
+    <string name="meds_collapse">Свернуть</string>
+
+    <string name="meds_streak_title">Серия приёма</string>
+    <string name="meds_streak_line">Полных дней подряд: %1$d. В ленте — %2$s.</string>
+    <string name="meds_day_missed">пропуск</string>
+    <string name="meds_day_rest">нет приёмов</string>
+    <string name="meds_day_a11y">%1$s: %2$s</string>
+    <string name="meds_more_a11y">Ещё: %1$s</string>
+
+    <string name="med_dose_taken_at">Принято в %1$s</string>
+    <string name="med_dose_taken">Принято</string>
+    <string name="med_dose_snoozed_until">Отложено до %1$s</string>
+    <string name="med_dose_log">Записать</string>
+    <string name="med_dose_log_action">Записать приём</string>
+    <string name="med_dose_take_at">Принять в %1$s</string>
+    <string name="med_dose_taken_today">Принято сегодня</string>
+
+    <string name="med_form_tablet">таблетки</string>
+    <string name="med_form_capsule">капсулы</string>
+    <string name="med_form_drops">капли</string>
+    <string name="med_form_syrup">сироп</string>
+    <string name="med_form_injection">инъекции</string>
+    <string name="med_form_spray">спрей</string>
+    <string name="med_form_patch">пластырь</string>
+    <string name="med_form_other">препарат</string>
+
+    <string name="med_unit_tablet">таб.</string>
+    <string name="med_unit_capsule">капс.</string>
+    <string name="med_unit_drops">кап.</string>
+    <string name="med_unit_syrup">мл</string>
+    <string name="med_unit_injection">инъ.</string>
+    <string name="med_unit_spray">доз</string>
+    <string name="med_unit_patch">шт.</string>
+    <string name="med_unit_other">шт.</string>
+
+    <string name="stock_card_title">Запас лекарств</string>
+    <string name="stock_card_subtitle">Запас в единицах лекарства</string>
+    <string name="stock_not_set">Запас не указан</string>
+    <string name="stock_remove_one">Убрать одну единицу: %1$s</string>
+    <string name="stock_add_one">Добавить одну единицу: %1$s</string>
+    <string name="stock_set">Указать</string>
+    <string name="stock_line">Запас: %1$s&#160;%2$s</string>
+    <string name="stock_item_line">%1$s: %2$s&#160;%3$s</string>
+    <string name="stock_section">Запас</string>
+    <string name="stock_optional">Необязательно</string>
+    <string name="stock_track">Считать количество</string>
+    <string name="stock_remaining">Осталось</string>
+    <string name="stock_threshold">Напомнить при</string>
+    <string name="stock_dose_hint">За приём списывается %1$s&#160;%2$s. Напомним, когда остаток дойдёт до порога.</string>
+
+    <string name="stock_error_empty">Укажите остаток или выключите учёт запаса</string>
+    <string name="stock_error_count_number">Остаток должен быть числом</string>
+    <string name="stock_error_threshold_number">Порог должен быть числом</string>
+    <string name="stock_error_threshold_first">Сначала укажите остаток, затем порог</string>
+    <string name="stock_error_threshold_above">Порог не может быть больше остатка</string>
+
+    <string name="schedule_weekdays">По дням недели</string>
+    <string name="schedule_interval_days">Каждые N дней</string>
+    <string name="schedule_weekdays_label">Дни недели</string>
+    <string name="schedule_interval">Интервал</string>
+    <string name="schedule_interval_dec">Уменьшить интервал</string>
+    <string name="schedule_interval_inc">Увеличить интервал</string>
+    <string name="schedule_interval_hint">От 1 до 90 дней: напоминания ищутся не более чем на 120 дней вперёд.</string>
+    <string name="schedule_times_label">Время приёма</string>
+    <string name="schedule_remove_time">Удалить время %1$s</string>
+    <string name="schedule_add_time">Добавить</string>
+    <string name="schedule_times_required">Добавьте хотя бы одно время</string>
+    <string name="schedule_prn_note">Приём по потребности: напоминаний по расписанию не будет. Записывайте приём вручную на вкладке «Сегодня».</string>
+    <string name="schedule_start">Начало</string>
+    <string name="schedule_end">Окончание</string>
+    <string name="schedule_has_end">Дата окончания</string>
+    <string name="schedule_end_before_start">Дата окончания раньше даты начала — напоминания не сработают</string>
+
+    <string name="med_editor_form_label">Форма</string>
+    <string name="med_editor_form_tablet">Таблетки</string>
+    <string name="med_editor_form_capsule">Капсулы</string>
+    <string name="med_editor_form_drops">Капли</string>
+    <string name="med_editor_form_syrup">Сироп</string>
+    <string name="med_editor_form_injection">Инъекции</string>
+    <string name="med_editor_form_spray">Спрей</string>
+    <string name="med_editor_form_patch">Пластырь</string>
+    <string name="med_editor_form_other">Другое</string>
+
+    <string name="med_editor_delete_title">Удалить лекарство?</string>
+    <string name="med_editor_delete_text">Расписание и будущие напоминания будут удалены. История приёмов останется в архиве.</string>
+    <string name="med_editor_deleting">Удаляем…</string>
+    <string name="med_editor_delete_error">Не удалось удалить лекарство. Попробуйте ещё раз.</string>
+    <string name="med_editor_discard_title">Выйти без сохранения?</string>
+    <string name="med_editor_discard_text">Изменения в карточке лекарства не будут сохранены.</string>
+    <string name="med_editor_discard_confirm">Выйти</string>
+    <string name="med_editor_discard_stay">Остаться</string>
+
+    <string name="med_editor_load_error_title">Не удалось загрузить лекарство</string>
+    <string name="med_editor_load_error_body">Проверьте свободное место и попробуйте ещё раз.</string>
+
+    <string name="med_editor_title_short">Лекарство</string>
+    <string name="med_editor_title_new">Новое лекарство</string>
+    <string name="med_editor_title_edit">Изменить лекарство</string>
+    <string name="med_editor_subtitle_new_short">Новое</string>
+    <string name="med_editor_subtitle_schedule_short">Расписание</string>
+    <string name="med_editor_subtitle">Расписание и напоминания</string>
+    <string name="med_editor_delete_a11y">Удалить лекарство</string>
+
+    <string name="med_editor_section_main">Основное</string>
+    <string name="med_editor_name_label">Название *</string>
+    <string name="med_editor_name_hint">Например, Сертралин</string>
+    <string name="med_editor_dosage_label">Дозировка</string>
+    <string name="med_editor_dosage_hint">50 мг</string>
+    <string name="med_editor_color">Цвет</string>
+    <string name="med_editor_purpose_label">По поводу</string>
+    <string name="med_editor_purpose_hint">Например, тревожность</string>
+    <string name="med_editor_prescriber_label">Врач</string>
+    <string name="med_editor_section_schedule">Расписание</string>
+
+    <string name="med_editor_notes_title">Заметки</string>
+    <string name="med_editor_notes_hint">Особенности приёма, побочные эффекты, вопросы врачу</string>
+    <string name="med_editor_notes_a11y">Заметки о лекарстве</string>
+
+    <string name="med_editor_status_stopped">Приём прекращён</string>
+    <string name="med_editor_status_paused">Приём на паузе</string>
+    <string name="med_editor_status_active">Активное лекарство</string>
+    <string name="med_editor_course_over">Курс закончился %1$s. Измените дату окончания, чтобы вернуть напоминания.</string>
+    <string name="med_editor_reminders_on">Напоминания о приёме включены</string>
+    <string name="med_editor_stopped_body">Прекращён %1$s. Включите, чтобы возобновить приём.</string>
+    <string name="med_editor_reminders_off">Напоминания выключены. Включите, чтобы возобновить приём.</string>
+
+    <string name="med_editor_error_name">Укажите название лекарства</string>
+    <string name="med_editor_error_time">Добавьте хотя бы одно время приёма</string>
+    <string name="med_editor_error_weekday">Выберите хотя бы один день недели</string>
+    <string name="med_editor_error_dates">Дата окончания раньше даты начала</string>
+    <string name="med_editor_error_check">Проверьте заполнение</string>
+    <string name="med_editor_save_error">Не удалось сохранить лекарство. Попробуйте ещё раз.</string>
+    <string name="med_editor_saving">Сохраняем…</string>
+    <string name="med_editor_save">Сохранить</string>
+    <string name="med_editor_cancel">Отмена</string>
+</resources>

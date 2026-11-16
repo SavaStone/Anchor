@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The Russian resource is the baseline; this file is its English translation. -->
+    <string name="app_name">Anchor</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_mood">Mood</string>
+    <string name="tab_meds">Medications</string>
+    <string name="tab_journal">Journal</string>
+    <string name="tab_more">More</string>
+
+    <string name="channel_meds">Medications</string>
+    <string name="channel_meds_desc">Reminders about dose times</string>
+    <string name="channel_refill">Refill</string>
+    <string name="channel_refill_desc">When your medication is running low</string>
+    <string name="channel_daily">Daily reminders</string>
+    <string name="channel_daily_desc">A gentle reminder to check in</string>
+    <string name="channel_appointments">Appointments</string>
+    <string name="channel_appointments_desc">Reminders about upcoming visits</string>
+
+    <string name="notif_med_title">Dose: %1$s</string>
+    <string name="notif_med_public_title">Medication reminder</string>
+    <string name="notif_med_public_text">Tap to open Anchor</string>
+    <string name="notif_action_taken">Taken</string>
+    <string name="notif_action_snooze">Snooze 10 min</string>
+    <string name="notif_action_skip">Not taken</string>
+    <string name="notif_refill_title">Running low</string>
+    <string name="notif_refill_text">%1$s: %2$s left</string>
+    <string name="notif_refill_big">%1$s %2$s: %3$s left. Reminder threshold: %4$s.</string>
+    <string name="notif_daily_title">How are you today?</string>
+    <string name="notif_daily_text">Take a moment to note your mood</string>
+    <string name="notif_appointment_title">Appointment: %1$s</string>
+
+    <string name="mood_1">Very difficult</string>
+    <string name="mood_2">Difficult</string>
+    <string name="mood_3">Okay</string>
+    <string name="mood_4">Good</string>
+    <string name="mood_5">Great</string>
+    <string name="mood_a11y">Mood: %1$s</string>
+
+    <string name="dose_status_skipped">Skipped</string>
+    <string name="dose_skip_action">Skip</string>
+    <string name="dose_status_missed">Not logged</string>
+    <string name="dose_status_overdue">Dose time has passed</string>
+    <string name="dose_taken_a11y">Taken: %1$s. Tap to undo</string>
+    <string name="dose_taken_prn_a11y">Taken: %1$s</string>
+    <string name="dose_take_a11y">Log dose</string>
+    <string name="dose_take_late_a11y">Log dose</string>
+    <string name="dose_next_waiting">Waiting to be logged: %1$s</string>
+    <string name="dose_next_missed">Not logged: %1$s</string>
+    <string name="dose_next">Next: %1$s</string>
+    <string name="streak_empty">No full days yet. When every dose of a day is logged, a flame appears.</string>
+    <string name="streak_no_data">Flames for days with a complete streak will appear here.</string>
+    <string name="streak_hint">The flame goes out if a day is left unlogged. If that was a mistake, you can restore the day.</string>
+    <string name="streak_none">no streak</string>
+    <string name="resolved_doses">Logged doses</string>
+    <string name="stock_low_title">Running low</string>
+    <string name="stock_low_hint">You can change the amount on the medication card.</string>
+    <string name="action_edit">Edit</string>
+
+    <string name="journal_empty_title">Your journal is empty</string>
+    <string name="journal_empty_body">Write down thoughts, events, and anything you want to remember.</string>
+    <string name="chart_need_two">At least two check-ins are needed for a chart</string>
+    <string name="insight_best_day">Easiest day</string>
+    <string name="more_demo">Add demo data</string>
+    <string name="more_demo_hint">See an example</string>
+    <string name="more_clear">Delete all data</string>
+    <string name="more_discard_point">Delete restore point without restoring</string>
+    <string name="more_med_toggle">Medication reminders</string>
+    <string name="more_mood_toggle">Mood reminder</string>
+    <string name="backup_upload">Upload to server</string>
+    <string name="backup_download">Download from server</string>
+    <string name="appt_name_required">Enter an appointment name</string>
+    <string name="today_details">Details</string>
+    <string name="today_add_details">Add details</string>
+    <string name="today_all_meds">All medications</string>
+    <string name="empty_med_title">Start with a medication</string>
+    <string name="add_medication">Add medication</string>
+
+    <string name="day_full">full day</string>
+    <string name="stock_low_line">Stock: %1$s&#160;%2$s · running low</string>
+    <string name="history_empty_body">Taken, snoozed, and unlogged doses will appear here.</string>
+    <string name="more_demo_confirm">Add demo data?</string>
+    <string name="open_settings">Open settings</string>
+    <string name="action_choose">Choose</string>
+    <string name="action_delete">Delete</string>
+    <string name="stock_low_short">%1$s&#160;%2$s · running low</string>
+
+    <string name="restore_day_title">Count this day?</string>
+    <string name="restore_day_body">Not all doses on %1$s are logged. If they appeared by mistake, the day will count toward the streak again.</string>
+    <string name="restore_day_action">Count day</string>
+    <string name="forgiven_day_title">Remove day from streak?</string>
+    <string name="forgiven_day_body">The day will no longer count as a full day.</string>
+    <string name="forgiven_day_action">Remove from streak</string>
+    <string name="day_forgiven">day counted toward the streak</string>
+    <string name="day_incomplete">day is not over yet</string>
+
+    <string name="insight_empty">Add more check-ins to see patterns.</string>
+    <string name="insight_need_more">A few more check-ins and trends will appear here.</string>
+    <string name="insight_better">Mood improved by %1$d%% over the week — a noticeable shift.</string>
+    <string name="insight_lower">Mood is %1$d%% lower over the week. It may be a reason to take care of yourself.</string>
+    <string name="insight_stable">Mood has been fairly steady.</string>
+
+    <string name="language_title">Language</string>
+    <string name="language_dialog_title">App language</string>
+    <string name="language_system">System default</string>
+    <string name="language_russian">Russian</string>
+    <string name="language_english">English</string>
+    <string name="action_close">Close</string>
+</resources>

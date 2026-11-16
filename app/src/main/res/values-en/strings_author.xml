@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- More screen: appointments keep their place after the Help section removal. -->
+    <string name="more_section_health">Health</string>
+    <string name="more_author">About the author</string>
+    <string name="more_author_body">YouTube channel and GitHub profile</string>
+
+    <!-- Author screen: name, role and external links. -->
+    <string name="author_title">About the author</string>
+    <string name="author_name">SavaStone</string>
+    <string name="author_role">Author of Anchor</string>
+    <string name="author_intro">I am building a self-observation app with no ads, no accounts, and no mandatory cloud.</string>
+    <string name="author_section_links">Links</string>
+    <string name="author_youtube_title">YouTube</string>
+    <string name="author_youtube_subtitle">Channel @SavaStone</string>
+    <string name="author_github_title">GitHub</string>
+    <string name="author_github_subtitle">github.com/SavaStone</string>
+    <string name="author_open_youtube">Open the SavaStone YouTube channel</string>
+    <string name="author_open_github">Open the SavaStone GitHub profile</string>
+    <string name="author_link_error">Could not open the link: %1$s</string>
+    <string name="author_footer">Thank you for choosing Anchor.</string>
+
+    <!-- About screen: the source code repository opens in an external app. -->
+    <string name="about_section_repo">App source code</string>
+    <string name="about_repo_title">Anchor</string>
+    <string name="about_repo_url">github.com/SavaStone/Anchor</string>
+    <string name="about_author_credit">Author: SavaStone</string>
+</resources>

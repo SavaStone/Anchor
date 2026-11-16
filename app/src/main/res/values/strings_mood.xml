@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Экран настроения -->
+    <string name="mood_title">Настроение</string>
+    <string name="mood_empty_title">Пока нет отметок</string>
+    <string name="mood_empty_body">Отметьте настроение — здесь появятся календарь и динамика.</string>
+    <string name="mood_period_30_days">За 30 дней</string>
+    <string name="mood_metric_mood">настрой</string>
+    <string name="mood_metric_anxiety">тревога</string>
+    <string name="mood_metric_sleep">сон</string>
+    <plurals name="mood_marks">
+        <item quantity="one">%1$d отметка</item>
+        <item quantity="few">%1$d отметки</item>
+        <item quantity="many">%1$d отметок</item>
+        <item quantity="other">%1$d отметки</item>
+    </plurals>
+    <string name="mood_scale_hint">1 — очень тяжело, 5 — отлично</string>
+    <string name="mood_anxiety_title">Тревога</string>
+    <string name="mood_anxiety_hint">0 — спокойно, 10 — очень сильная</string>
+    <string name="mood_energy_title">Энергия</string>
+    <string name="mood_sleep_title">Сон</string>
+    <string name="mood_distribution">Распределение</string>
+    <string name="mood_top_emotions">Частые эмоции</string>
+    <string name="mood_top_symptoms">Частые симптомы</string>
+    <string name="mood_tag_count">%1$s · %2$d</string>
+    <string name="mood_mark_action">Отметить</string>
+    <string name="mood_mark_a11y">Отметить настроение</string>
+    <string name="mood_date_with_year">%1$s %2$d</string>
+    <string name="mood_future_day">Будущий день</string>
+    <string name="mood_no_marks">Нет отметки</string>
+    <string name="mood_metric_anxiety_value">тревога %1$d/10</string>
+    <string name="mood_metric_energy_value">энергия %1$d/10</string>
+    <string name="mood_metric_sleep_value">сон %1$s</string>
+    <string name="mood_edit_a11y">Изменить отметку</string>
+
+    <string name="insight_title">Наблюдение</string>
+    <string name="insight_window">За последние 30 дней</string>
+    <string name="insight_most_frequent">Чаще всего</string>
+
+    <!-- Редактор отметки -->
+    <string name="mood_editor_title_short">Отметка</string>
+    <string name="mood_editor_title_edit">Изменить отметку</string>
+    <string name="mood_editor_title_new">Отметить день</string>
+    <string name="mood_saving">Сохранение…</string>
+    <string name="mood_saved">Сохранено</string>
+    <string name="mood_delete_a11y">Удалить отметку</string>
+    <string name="mood_time_chip">Время отметки: %1$s</string>
+    <string name="mood_note_label">Что повлияло</string>
+    <string name="mood_note_placeholder">Пара слов: что повлияло на состояние, что помогло</string>
+    <string name="mood_done">Готово</string>
+    <string name="mood_add">Добавить</string>
+    <string name="mood_cancel">Отмена</string>
+    <string name="mood_choose">Выбрать</string>
+    <string name="mood_need_mood_title">Выберите настроение</string>
+    <string name="mood_need_mood_body">Эмоции, симптомы, показатели и заметка сохраняются вместе с уровнем настроения. Без него они не сохранятся.</string>
+    <string name="mood_exit_without_saving">Выйти без сохранения</string>
+    <string name="mood_choose_mood">Выбрать настроение</string>
+    <string name="mood_delete_title">Удалить отметку?</string>
+    <string name="mood_delete_body">Запись за %1$s будет удалена без возможности восстановления.</string>
+    <string name="mood_deleting">Удаление…</string>
+    <string name="mood_custom_emotion">Своя эмоция</string>
+    <string name="mood_custom_symptom">Свой симптом</string>
+    <string name="mood_error_not_found">Отметка не найдена. Возможно, её уже удалили.</string>
+    <string name="mood_error_load">Не удалось загрузить отметку. Попробуйте открыть её ещё раз.</string>
+    <string name="mood_error_save">Не удалось сохранить отметку. Попробуйте ещё раз.</string>
+    <string name="mood_error_delete">Не удалось удалить отметку. Попробуйте ещё раз.</string>
+    <string name="mood_error_add_tag">Не удалось добавить пункт. Попробуйте ещё раз.</string>
+
+    <!-- Шкала, показатели и теги -->
+    <string name="mood_scale_title">Как вы себя чувствуете?</string>
+    <string name="mood_level_of_five">%1$d из 5</string>
+    <string name="mood_body_metrics_title">Телесные показатели</string>
+    <string name="mood_optional">Необязательно</string>
+    <string name="mood_emotions_title">Эмоции</string>
+    <string name="mood_symptoms_title">Симптомы и побочные эффекты</string>
+    <string name="mood_collapse">Свернуть</string>
+    <string name="mood_show_all">Показать все</string>
+    <string name="mood_tag_name_label">Название</string>
+
+    <!-- Хорошее за день -->
+    <string name="mood_positives_title">Хорошее за день</string>
+    <string name="mood_positives_events">События</string>
+    <string name="mood_positives_events_empty">Что хорошего случилось?</string>
+    <string name="mood_positives_deeds">Дела</string>
+    <string name="mood_positives_deeds_empty">Что удалось сделать?</string>
+    <string name="mood_positive_event_title">Хорошее событие</string>
+    <string name="mood_positive_deed_title">Сделанное дело</string>
+    <string name="mood_positive_field">Запись</string>
+    <string name="mood_positive_add_a11y">Добавить: %1$s</string>
+    <string name="mood_positive_delete_a11y">Удалить запись: %1$s</string>
+
+    <!-- Графики -->
+    <string name="chart_mood_empty_a11y">График настроения: пока недостаточно данных</string>
+    <string name="chart_mood_a11y">График настроения. Отметок: %1$d. Диапазон: от %2$d до %3$d. Последняя: %4$d из 5.</string>
+    <string name="chart_anxiety_empty_a11y">График тревоги: пока недостаточно данных</string>
+    <string name="chart_anxiety_a11y">График тревоги. Отметок: %1$d. Диапазон: от %2$d до %3$d из 10.</string>
+    <string name="chart_anxiety_hint">Добавьте уровень тревоги в дневных отметках, чтобы увидеть динамику.</string>
+    <string name="chart_distribution_empty_a11y">Распределение настроения: пока нет отметок</string>
+    <string name="chart_distribution_a11y" tools:ignore="PluralsCandidate">Распределение настроения, всего %1$d: %2$s</string>
+    <string name="chart_distribution_item">%1$d — %2$d</string>
+    <string name="chart_week_rhythm_empty_a11y">Ритм недели: нет данных</string>
+    <string name="chart_week_rhythm_a11y">Ритм недели: %1$s</string>
+    <string name="chart_week_rhythm_item">%1$s — %2$d из 5</string>
+
+    <!-- Дневник -->
+    <string name="journal_title">Дневник</string>
+    <string name="journal_search_placeholder">Поиск по записям</string>
+    <string name="journal_search_clear">Очистить поиск</string>
+    <string name="journal_filter_all">Все</string>
+    <string name="journal_results">Найдено: %1$s</string>
+    <string name="journal_empty_search_title">Ничего не найдено</string>
+    <string name="journal_empty_search_body">Попробуйте другой запрос или сбросьте фильтр.</string>
+    <string name="journal_reset_filters">Сбросить фильтры</string>
+    <string name="journal_first_entry">Первая запись</string>
+    <string name="journal_pinned">Закреплённые</string>
+    <string name="journal_pinned_state">Закреплено</string>
+    <string name="journal_new_short">Запись</string>
+    <string name="journal_new_a11y">Новая запись</string>
+    <string name="journal_untitled_note">Заметка</string>
+    <string name="journal_more_tags">+%1$d</string>
+
+    <!-- Редактор записи -->
+    <string name="journal_error_load">Не удалось загрузить запись. Попробуйте открыть её ещё раз.</string>
+    <string name="journal_error_remove_empty">Не удалось убрать пустую запись. Попробуйте ещё раз.</string>
+    <string name="journal_error_save">Не удалось сохранить запись. Проверьте свободное место и попробуйте ещё раз.</string>
+    <string name="journal_error_delete">Не удалось удалить запись. Попробуйте ещё раз.</string>
+    <string name="journal_back">Назад</string>
+    <string name="journal_saving">Сохранение…</string>
+    <string name="journal_saved">Сохранено</string>
+    <string name="journal_pin">Закрепить</string>
+    <string name="journal_unpin">Открепить</string>
+    <string name="journal_delete_a11y">Удалить запись</string>
+    <string name="journal_done">Готово</string>
+    <string name="journal_title_field_a11y">Заголовок записи</string>
+    <string name="journal_title_placeholder">Заголовок</string>
+    <string name="journal_body_field_a11y">Текст записи</string>
+    <string name="journal_body_placeholder">Что произошло, о чём думали, что хочется запомнить…</string>
+    <string name="journal_tags_title">Метки</string>
+    <string name="journal_tag_remove_a11y">Метка «%1$s». Нажмите, чтобы удалить</string>
+    <string name="journal_add_tag">Добавить метку</string>
+    <string name="journal_tag_label">Метка</string>
+    <string name="journal_tag_placeholder">через запятую</string>
+    <string name="journal_add">Добавить</string>
+    <string name="journal_cancel">Отмена</string>
+    <string name="journal_choose">Выбрать</string>
+    <string name="journal_delete_title">Удалить запись?</string>
+    <string name="journal_delete_body">Это действие нельзя отменить.</string>
+    <string name="journal_deleting">Удаление…</string>
+    <string name="journal_day_state">Состояние за день</string>
+    <string name="journal_day_state_hint">Заполняется в «Настроении»</string>
+    <string name="journal_day_state_empty">Отметьте настроение — оно появится здесь рядом с записью.</string>
+    <string name="journal_day_state_future">Будущий день: настроение можно будет отметить, когда он наступит.</string>
+    <string name="journal_add_mark">Добавить отметку</string>
+</resources>

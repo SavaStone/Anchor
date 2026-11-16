@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pdf_page">стр. %1$d</string>
+    <string name="pdf_generated">Сформировано %1$s · только для личного использования</string>
+    <string name="pdf_not_medical">Не является медицинским заключением и не заменяет консультацию врача</string>
+    <string name="pdf_cover_kicker">СВОДКА САМОНАБЛЮДЕНИЯ</string>
+    <string name="pdf_cover_title">Что происходило</string>
+    <string name="pdf_period">%1$s — %2$s · %3$s</string>
+    <string name="pdf_section_highlights">Главное за период</string>
+    <string name="pdf_metric_days">Дней с отметками</string>
+    <string name="pdf_metric_avg_mood">Среднее настроение</string>
+    <string name="pdf_metric_streak">Дней подряд</string>
+    <string name="pdf_metric_anxiety">Тревога</string>
+    <string name="pdf_metric_energy">Энергия</string>
+    <string name="pdf_metric_sleep">Сон</string>
+    <string name="pdf_section_mood_chart">Динамика настроения</string>
+    <string name="pdf_chart_need_two">Недостаточно отметок для графика</string>
+    <string name="pdf_section_distribution">Распределение настроения</string>
+    <string name="pdf_section_meds">Лекарства</string>
+    <string name="pdf_no_active_meds">Активных лекарств нет.</string>
+    <string name="pdf_stock">Запас: %1$s</string>
+    <string name="pdf_section_tags">Что отмечалось чаще</string>
+    <string name="pdf_no_tags">Эмоции и симптомы не отмечены.</string>
+    <string name="pdf_emotions">Эмоции</string>
+    <string name="pdf_symptoms">Симптомы</string>
+    <string name="pdf_section_journal">Дневник</string>
+    <string name="pdf_no_entries">За выбранный период записей нет.</string>
+    <string name="pdf_entries_count">Записей: %1$s. Ниже — заголовки и начало заметок.</string>
+    <string name="pdf_untitled">Без названия</string>
+    <string name="pdf_section_notes">Заметки и вопросы к приёму</string>
+    <string name="pdf_notes_hint">Запишите наблюдения, вопросы и то, что важно обсудить с врачом.</string>
+</resources>
