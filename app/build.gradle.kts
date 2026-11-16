@@ -20,11 +20,14 @@ android {
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "app.opora"
+        // Android identity differs from the Kotlin namespace on purpose: the
+        // published 1.0.0-beta was app.opora, so this id lets both installs
+        // coexist while packages, Room schema and OPORA1 backups stay untouched.
+        applicationId = "io.github.savastone.anchor"
         minSdk = 26
         targetSdk = 35
-        versionCode = 2
-        versionName = "1.0.0-beta"
+        versionCode = 3
+        versionName = "1.0.1-beta"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables { useSupportLibrary = true }

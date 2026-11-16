@@ -3,16 +3,16 @@
 A local-first Android app for mood tracking, medication reminders, journaling
 and doctor appointments. No ads, analytics, accounts or mandatory cloud.
 
-**Beta 1.0.0 · Android 8.0+ · English and Russian**
+**Beta 1.0.1 · Android 8.0+ · English and Russian**
 
 **Development note:** This project was vibe-coded with AI assistance.
 
 ## Install
 
-**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.0-beta/Anchor-1.0.0-beta.apk)** · 3.70 MB
+**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.1-beta/Anchor-1.0.1-beta.apk)**
 
-1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.0-beta) on your Android device.
-2. Under **Assets**, download **Anchor-1.0.0-beta.apk**.
+1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.1-beta) on your Android device.
+2. Under **Assets**, download **Anchor-1.0.1-beta.apk**.
 3. Open the downloaded file. If Android asks, allow your browser or file manager
    to install apps from this source, then confirm installation.
    You can turn that permission off afterward.
@@ -20,6 +20,14 @@ and doctor appointments. No ads, analytics, accounts or mandatory cloud.
 While the repository is private, you need a GitHub account with access to download.
 Updates require a matching signing key. Do not uninstall an existing app containing
 personal data without a verified backup.
+
+**Moving from 1.0.0-beta:** the Android application ID changed from `app.opora`
+to `io.github.savastone.anchor`. Android installs this version as a separate app;
+it does not update or automatically copy data from the old one. Export an encrypted
+backup in the old app and import it in the new app. Keep the old installation until
+you have checked the imported records. Reconfigure reminders, app lock, backup-folder
+access and optional WebDAV in the new app; do not assume permissions or credentials
+transfer automatically.
 
 ## What you can do
 
@@ -71,8 +79,10 @@ See [Data and privacy](PRIVACY.md) for details.
   Do not rely on it as your only medication reminder or medical record.
 - Reminder timing depends on Android permissions and device restrictions.
 - Keep a verified external backup and remember its password.
-- Current checks: 154 JVM tests and 9 targeted Android bug-report tests passed;
-  lint reported 0 errors and 24 warnings. The full Android test suite was not rerun.
+- Current checks: 160 JVM tests passed; lint reported 0 errors and 24 warnings.
+  The signed release was installed and launched alongside the old app.
+  Nine targeted Android bug-report tests passed on the previous version;
+  backup import and the full Android test suite were not rerun for this change.
 
 See the [changelog](CHANGELOG.md) for release details and the APK checksum.
 
