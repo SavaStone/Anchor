@@ -99,5 +99,4 @@ The official signing key is not included.
 
 ## License
 
-A source-code license has not been selected. Access to this repository does not
-grant redistribution rights; licensing must be decided before public publication.
+Licensed under the [MIT License](LICENSE). Copyright © 2026 Sava Stone.

@@ -1,7 +1,8 @@
 # Working on the project
 
 The repository is in private review by the author.
-The license and the process for external contributions are not defined yet.
+The project is licensed under the [MIT License](LICENSE).
+The process for external contributions is not defined yet.
 
 ## Before making changes
 
