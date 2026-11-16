@@ -1,13 +1,13 @@
-## Изменение
+## Change
 
-Что меняется и зачем:
+What changes and why:
 
-## Проверка
+## Verification
 
-Команды, результаты и ограничения проверки:
+Commands, results and verification limitations:
 
-## Безопасность
+## Safety
 
-- [ ] Нет ключей, паролей, личных записей, логов и сборочных артефактов.
-- [ ] Сохранены RU/EN и совместимость данных либо описан план миграции.
-- [ ] Не добавлены обязательная сеть, аналитика и регистрация.
+- [ ] No keys, passwords, personal records, logs or build artifacts.
+- [ ] RU/EN and data compatibility are preserved, or a migration plan is described.
+- [ ] No mandatory network, analytics or sign-up added.

@@ -1,31 +1,31 @@
-# Изменения
+# Changelog
 
-## 1.0.0-beta — текущий снимок для закрытого просмотра
+## 1.0.0-beta — current snapshot for private review
 
-### Возможности
-- Настроение, лекарства, дневник, приёмы у врача и PDF-отчёт.
-- Шифрованные копии, автобэкап в выбранную папку и необязательный WebDAV.
-- RU/EN, темы, настройка главной/нижнего меню, блокировка и защита от скриншотов.
+### Features
+- Mood, medication, journal, doctor visits and PDF report.
+- Encrypted backups, auto-backup to a chosen folder and optional WebDAV.
+- RU/EN, themes, home/bottom menu setup, app lock and screenshot protection.
 
-### Последние изменения
-- Удалены «Помощь» / «Если тяжело» и встроенные телефоны помощи.
-- Добавлены сведения об авторе, ссылки YouTube/GitHub и ссылка на репозиторий.
-- Обновлена адаптивная и монохромная иконка приложения.
-- Багрепорты получили адрес `savastone32@proton.me`, обработку ошибок
-  открытия меню обмена и очистку экспортируемых логов по типовым шаблонам.
-- Сохранена совместимость старых данных; исходные логи не изменяются
-  при подготовке очищенного вложения.
+### Recent changes
+- Removed "Help" / "If things are hard" and the built-in help phone numbers.
+- Added author information, YouTube/GitHub links and a repository link.
+- Updated the adaptive and monochrome app icon.
+- Bug reports now have the recipient `savastone32@proton.me`, handle share-menu
+  launch failures, and sanitize exported logs by common patterns.
+- Old data compatibility is preserved; raw logs are not modified
+  when preparing a sanitized attachment.
 
-### Проверка сборки
+### Build verification
 - `versionCode=2`, `versionName=1.0.0-beta`.
-- Release APK: 3 700 410 байт, R8 + shrinkResources, non-debuggable.
-- SHA-256 APK:
+- Release APK: 3,700,410 bytes, R8 + shrinkResources, non-debuggable.
+- APK SHA-256:
   `0e5c2fe9ac3ea3db0c0a4dd1243101d76011a010ff5937884948c3e92d6461ab`.
-- 154 JVM-теста прошли; lintRelease — 0 ошибок, 24 предупреждения.
-- Прямой точечный запуск Android-тестов багрепортов: 9 тестов прошли.
-- Вручную проверены автор, ссылка репозитория, светлая/тёмная тема и
-  крупный шрифт. Полный Android-набор повторно не запускался.
+- 154 JVM tests passed; lintRelease — 0 errors, 24 warnings.
+- Direct targeted run of the Android bug-report tests: 9 tests passed.
+- Manually verified the author screen, repository link, light/dark theme and
+  large font. The full Android suite was not re-run.
 
-Это исходный снимок существующей локальной разработки, не история всех
-предшествующих коммитов. Ключи подписи, локальные планы, агентские инструменты,
-личные артефакты и старые упаковки не предназначены для публикации.
+This is a source snapshot of existing local development, not the history of all
+prior commits. Signing keys, local plans, agent tooling,
+personal artifacts and old packages are not intended for publication.

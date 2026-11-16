@@ -1,39 +1,39 @@
-# Работа с проектом
+# Working on the project
 
-Репозиторий находится на этапе закрытого просмотра автором.
-Лицензия и порядок внешних вкладов пока не определены.
+The repository is in private review by the author.
+The license and the process for external contributions are not defined yet.
 
-## Перед изменениями
+## Before making changes
 
-- Не добавляйте обязательную регистрацию, сервер, аналитику или рекламу.
-- Не меняйте зависимости, подпись и формат данных без отдельного решения.
-- Сохраняйте импорт старых копий `OPORA1` и миграции Room (текущая схема v11).
-- RU/EN-тексты должны находиться в ресурсах; не хардкодьте русские строки в UI.
-- Учитывайте темы, крупный шрифт и планшетную навигацию.
-- Material 3 сейчас 1.3.2: не используйте недоступные Expressive API.
+- Do not add mandatory sign-up, a server, analytics or ads.
+- Do not change dependencies, signing or the data format without a separate decision.
+- Preserve import of old `OPORA1` backups and Room migrations (current schema v11).
+- RU/EN texts must live in resources; do not hardcode Russian strings in the UI.
+- Consider themes, large font and tablet navigation.
+- Material 3 is currently 1.3.2: do not use unavailable Expressive APIs.
 
-## Проверка
+## Verification
 
-Нужны JDK 17 и Android SDK 35. Команды и пути сборки — в README.
-Для обычных изменений начните с целевых JVM-тестов; перед упаковкой используйте:
+You need JDK 17 and Android SDK 35. Build commands and paths are in the README.
+For ordinary changes start with targeted JVM tests; before packaging use:
 
 ```sh
 ./gradlew :app:assembleRelease :app:bundleRelease :app:testDebugUnitTest :app:lintRelease
 ```
 
-Подписанная официальная сборка требует локального ключа автора, которого
-в репозитории нет. Для собственной разработки используйте debug-сборку.
+A signed official build requires the author's local key, which is
+not in the repository. For your own development, use a debug build.
 
-Не запускайте `connectedDebugAndroidTest` на устройстве с ценными данными:
-очистка окружения Gradle может удалить установленные тестируемые пакеты.
-Используйте отдельный тестовый эмулятор и синтетические данные.
-Не заменяйте release на debug через удаление приложения без резервной копии.
+Do not run `connectedDebugAndroidTest` on a device with valuable data:
+Gradle environment cleanup may remove the installed packages under test.
+Use a separate test emulator and synthetic data.
+Do not replace release with debug by uninstalling the app without a backup.
 
-## Что не коммитить
+## What not to commit
 
-Ключи и конфигурацию подписи, `local.properties`, учётные данные WebDAV,
-файлы `.env`, APK/AAB и build-выходы, базы, бэкапы, PDF с личными данными,
-логи, скриншоты реальных записей и локальные агентские сессии.
+Signing keys and configuration, `local.properties`, WebDAV credentials,
+`.env` files, APKs/AABs and build outputs, databases, backups, PDFs with personal data,
+logs, screenshots of real records and local agent sessions.
 
-Описывайте в изменениях поведение, проверку и известные ограничения.
-Не выдавайте запланированные функции за реализованные.
+Describe behavior, verification and known limitations in changes.
+Do not present planned features as implemented.

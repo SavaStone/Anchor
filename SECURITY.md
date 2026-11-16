@@ -1,20 +1,20 @@
-# Сообщить об уязвимости
+# Report a vulnerability
 
-Для текущей беты нет обещанного срока поддержки или SLA.
+The current beta has no promised support period or SLA.
 
-Отправьте описание на **savastone32@proton.me** с темой
-`Anchor security report`. Не публикуйте детали уязвимости в Issues до
-согласования с автором.
+Email a description to **savastone32@proton.me** with the subject
+`Anchor security report`. Do not publish vulnerability details in Issues before
+coordinating with the author.
 
-Полезно указать:
-- версию приложения, Android и модель устройства;
-- минимальные шаги воспроизведения на вымышленных данных;
-- ожидаемое и фактическое поведение;
-- возможное влияние и безопасный способ проверки.
+It helps to include:
+- app version, Android version and device model;
+- minimal reproduction steps on fictional data;
+- expected and actual behavior;
+- possible impact and a safe way to verify it.
 
-Не присылайте реальные медицинские записи, ключи подписи, токены,
-пароли, дампы личной базы или необработанные логи. Не проверяйте
-уязвимости на чужих устройствах, серверах и данных.
+Do not send real medical records, signing keys, tokens,
+passwords, personal database dumps or raw logs. Do not test
+vulnerabilities on other people's devices, servers or data.
 
-Если секрет уже опубликован, удаления файла недостаточно:
-секрет нужно отозвать/заменить и проверить историю публикации.
+If a secret has already been published, deleting the file is not enough:
+the secret must be revoked/replaced and the publication history reviewed.

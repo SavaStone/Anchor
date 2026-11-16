@@ -1,84 +1,84 @@
-# Опора / Anchor
+# Anchor
 
-Приватный Android-помощник для ежедневного самонаблюдения: настроение, лекарства,
-дневник и приёмы у врача. Без рекламы, аналитики, регистрации и обязательного облака.
+A private Android companion for daily self-observation: mood, medication,
+a journal and doctor visits. No ads, analytics, sign-up or mandatory cloud.
 
-> Приложение не ставит диагнозы, не назначает лечение и не заменяет врача.
-> В экстренной ситуации обращайтесь в местную экстренную службу.
+> The app does not diagnose, prescribe treatment or replace a doctor.
+> In an emergency, contact your local emergency service.
 
-**Статус:** `1.0.0-beta` · Android 8.0+ · русский и английский интерфейс.
-Репозиторий подготовлен для закрытого просмотра автором; публичная публикация
-и выбор лицензии — отдельные решения.
+**Status:** `1.0.0-beta` · Android 8.0+ · Russian and English interface.
+The repository is prepared for private review by the author; public publication
+and the choice of license are separate decisions.
 
-## Возможности
+## Features
 
-| Раздел | Что внутри |
+| Section | What it contains |
 |---|---|
-| Сегодня | Быстрая отметка настроения, приёмы лекарств на день, дневник, ближайший визит и серии дней. Блоки можно скрывать и переставлять. |
-| Настроение | Календарь, графики, недельные сводки; сон, энергия, тревога, эмоции, симптомы и заметки. |
-| Лекарства | Расписание по дням недели, интервалам или по потребности; несколько времён, запас, история, напоминания с действиями. |
-| Дневник | Записи с настроением, тегами, закреплением, поиском и автосохранением. |
-| Приёмы у врача | Встречи, заметки, напоминания, отметка о завершении и добавление в системный календарь. |
-| Отчёт для врача | PDF за выбранный период; записи дневника добавляются по желанию. |
-| Резервные копии | Шифрованный экспорт/импорт, автобэкап в выбранную папку, необязательный WebDAV. |
+| Today | Quick mood check-in, the day's medication doses, journal, next appointment and streak days. Blocks can be hidden and reordered. |
+| Mood | Calendar, charts, weekly summaries; sleep, energy, anxiety, emotions, symptoms and notes. |
+| Medication | Schedules by weekday, interval or as needed; several times, stock, history, reminders with actions. |
+| Journal | Entries with mood, tags, pinning, search and autosave. |
+| Doctor visits | Appointments, notes, reminders, completion marking and adding to the system calendar. |
+| Doctor report | PDF for a chosen period; journal entries are optional. |
+| Backups | Encrypted export/import, auto-backup to a chosen folder, optional WebDAV. |
 
-В «Ещё» доступны имя профиля, настройка напоминаний, темы и системные цвета,
-режим для левшей, язык, настройка главной и нижнего меню, блокировка приложения
-биометрией/PIN устройства и защита от скриншотов. Там же находятся демо-данные,
-удаление данных с локальной точкой восстановления, сведения об авторе и багрепорт.
+"More" offers the profile name, reminder settings, themes and system colors,
+left-handed mode, language, home and bottom menu setup, app lock with device
+biometrics/PIN and screenshot protection. The same screen holds demo data,
+data deletion with a local restore point, author information and the bug report.
 
-Раздел «Помощь» / «Если тяжело» и встроенные номера горячих линий удалены.
-Старые поля кризисного плана сохранены только для совместимости базы и копий.
+The "Help" / "If things are hard" section and the built-in hotline numbers have been removed.
+Legacy crisis-plan fields are kept only for database and backup compatibility.
 
-## Установка
+## Installation
 
-Для установки используйте **release APK**, прикреплённый к закрытому
-[предрелизу](https://github.com/SavaStone/Anchor/releases), когда он доступен.
-Файл из текущей локальной сборки: `app/build/outputs/apk/release/app-release.apk`.
-Его размер — около **3,70 МБ**. Debug APK значительно больше и предназначен для разработки.
+Use the **release APK** attached to the private
+[prerelease](https://github.com/SavaStone/Anchor/releases/tag/v1.0.0-beta).
+The file from the current local build: `app/build/outputs/apk/release/app-release.apk`.
+It is about **3.70 MB**. The debug APK is much larger and intended for development.
 
 ```sh
 adb install -r app/build/outputs/apk/release/app-release.apk
 ```
 
-Обновление сохраняет данные только при совместимой подписи. Release и debug
-подписаны разными ключами; не удаляйте приложение ради замены одного другим,
-не сделав проверенную резервную копию.
+An update preserves data only with a compatible signature. Release and debug builds
+are signed with different keys; do not uninstall the app to swap one for the other
+without a verified backup.
 
-## Данные и резервные копии
+## Data and backups
 
-- Основные данные хранятся на устройстве; Android cloud backup отключён.
-- Шифрованные копии используют PBKDF2 + AES-GCM; формат — `OPORA1`.
-- Для автобэкапа нужно выбрать папку системным диалогом и задать пароль.
-  Сохраняются 7 последних файлов, не чаще раза в час; пустая база не копируется.
-- Файлы в выбранной папке могут пережить удаление приложения. После переустановки
-  доступ к папке и настройки потребуется выдать заново; пароль необходимо помнить.
-- WebDAV подключается по желанию: адрес папки, логин и пароль доступа к серверу.
-  **Пароль шифрования копии задаётся отдельно от пароля сервера.**
-  Автосинхронизация — с интервалом 6 часов при доступной сети.
-- Доступен также экспорт незашифрованного JSON. Он не защищён паролем.
-- PDF, экспорт и багрепорты передаются через выбранное пользователем приложение.
-  Автоматической отправки багрепортов нет.
+- Primary data stays on the device; Android cloud backup is disabled.
+- Encrypted backups use PBKDF2 + AES-GCM; the format is `OPORA1`.
+- Auto-backup requires choosing a folder through the system dialog and setting a password.
+  The 7 most recent files are kept, at most once an hour; an empty database is not copied.
+- Files in the chosen folder may survive app removal. After reinstalling, folder access
+  and settings must be granted again; the password must be remembered.
+- WebDAV is optional: folder address, login and server access password.
+  **The backup encryption password is set separately from the server password.**
+  Auto-sync runs every 6 hours when the network is available.
+- An unencrypted JSON export is also available. It is not password-protected.
+- PDF, exports and bug reports are passed through an app chosen by the user.
+  There is no automatic bug report submission.
 
-Подробности и ограничения: [PRIVACY.md](PRIVACY.md).
+Details and limitations: [PRIVACY.md](PRIVACY.md).
 
-## Ограничения беты
+## Beta limitations
 
-- Для напоминаний нужны системные разрешения; ограничения Android и производителя
-  устройства могут влиять на своевременность уведомлений.
-- Блокировка требует настроенной биометрии или экранного замка устройства.
-- Очистка технических логов от личных данных выполняется best effort:
-  проверяйте текст и вложения перед отправкой.
-- Реальную работу WebDAV следует проверить со своим сервером; наличие функции
-  не означает проверку совместимости со всеми провайдерами.
-- Не используйте приложение как единственный источник медицинских данных
-  или единственное средство напоминания о критически важном лечении.
+- Reminders need system permissions; Android and device-manufacturer restrictions
+  may affect notification timeliness.
+- App lock requires configured device biometrics or a screen lock.
+- Removing personal data from technical logs is best effort:
+  review the text and attachments before sending.
+- Real WebDAV operation should be tested with your own server; the presence of the
+  feature does not mean compatibility with every provider has been verified.
+- Do not use the app as the only source of medical data
+  or the only reminder for critical treatment.
 
-## Сборка из исходников
+## Building from source
 
-Нужны JDK 17, Android SDK Platform 35 и доступ к репозиториям зависимостей.
-Открыть проект можно в Android Studio. Локальный путь к SDK задаётся в
-`local.properties` (`sdk.dir=...`); этот файл не коммитится.
+You need JDK 17, Android SDK Platform 35 and access to dependency repositories.
+The project can be opened in Android Studio. The local SDK path is set in
+`local.properties` (`sdk.dir=...`); that file is not committed.
 
 ```sh
 ./gradlew :app:assembleDebug
@@ -86,60 +86,60 @@ adb install -r app/build/outputs/apk/release/app-release.apk
 ```
 
 Debug APK: `app/build/outputs/apk/debug/app-debug.apk`.
-На Windows используйте `gradlew.bat`.
+On Windows use `gradlew.bat`.
 
-Оптимизированная упаковка:
+Optimized packaging:
 
 ```sh
 ./gradlew :app:assembleRelease :app:bundleRelease :app:testDebugUnitTest :app:lintRelease
 ```
 
-Официальная подпись не входит в репозиторий. Без её конфигурации нельзя получить
-APK с подписью автора. Для собственной подписанной сборки используйте свой ключ
-и локальный `keystore.properties` с полями `storeFile`, `storePassword`,
-`keyAlias`, `keyPassword`. Не публикуйте значения, файл конфигурации и ключ.
-Сборка своим ключом не обновит установленную официальную сборку.
+The official signing key is not part of the repository. Without its configuration
+an APK signed by the author cannot be produced. For your own signed build, use your
+own key and a local `keystore.properties` with the `storeFile`, `storePassword`,
+`keyAlias` and `keyPassword` fields. Do not publish the values, the configuration
+file or the key. A build with your own key will not update an installed official build.
 
-Выходы release: APK — `app/build/outputs/apk/release/`, AAB —
-`app/build/outputs/bundle/release/`, mapping R8 — `app/build/outputs/mapping/release/`.
+Release outputs: APK — `app/build/outputs/apk/release/`, AAB —
+`app/build/outputs/bundle/release/`, R8 mapping — `app/build/outputs/mapping/release/`.
 
-Проверки текущей сборки: **154 JVM-теста**, **9 точечных Android-тестов багрепортов**;
-lintRelease — **0 ошибок, 24 предупреждения**. Это не полный повторный прогон
-всех Android-тестов. Детали: [CHANGELOG.md](CHANGELOG.md).
+Checks on the current build: **154 JVM tests**, **9 targeted Android bug-report tests**;
+lintRelease — **0 errors, 24 warnings**. This is not a full re-run of all Android tests.
+Details: [CHANGELOG.md](CHANGELOG.md).
 
-## Структура проекта
+## Project structure
 
-Код приложения — `app/src/main/java/app/opora/`:
+App code lives in `app/src/main/java/app/opora/`:
 
 ```text
-ui/             экраны, навигация, компоненты и тема
-data/           Room, настройки, резервные копии и WebDAV
-domain/         расписания и статистика
-notifications/  уведомления и будильники
-work/           фоновые задачи
-reports/        PDF-отчёт
-diagnostics/    технический отчёт и локальные логи сбоев
-security/       криптография и защита
+ui/             screens, navigation, components and theme
+data/           Room, settings, backups and WebDAV
+domain/         schedules and statistics
+notifications/  notifications and alarms
+work/           background jobs
+reports/        PDF report
+diagnostics/    technical report and local crash logs
+security/       cryptography and protection
 ```
 
-Тексты: `app/src/main/res/values/strings*.xml` и `values-en/strings*.xml`.
-Тесты: `app/src/test/` и `app/src/androidTest/`.
-Стек: Kotlin, Jetpack Compose, Material 3, Room, DataStore, WorkManager.
-Room v11; minSdk 26, compile/targetSdk 35; Material 3 в текущем BOM — 1.3.2.
+Texts: `app/src/main/res/values/strings*.xml` and `values-en/strings*.xml`.
+Tests: `app/src/test/` and `app/src/androidTest/`.
+Stack: Kotlin, Jetpack Compose, Material 3, Room, DataStore, WorkManager.
+Room v11; minSdk 26, compile/targetSdk 35; Material 3 in the current BOM — 1.3.2.
 
-## Обратная связь и автор
+## Feedback and author
 
 - YouTube: [@SavaStone](https://www.youtube.com/@SavaStone)
 - GitHub: [SavaStone](https://github.com/SavaStone)
-- Багрепорты: **savastone32@proton.me** или «Ещё → Сообщить о проблеме».
-- Для уязвимостей: [SECURITY.md](SECURITY.md).
-- Для изменений и безопасной проверки: [CONTRIBUTING.md](CONTRIBUTING.md).
+- Bug reports: **savastone32@proton.me** or "More → Report a problem".
+- Vulnerabilities: [SECURITY.md](SECURITY.md).
+- Changes and safe verification: [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Не прикладывайте к обращениям личные дневники, медицинские записи, пароли,
-ключи и необработанные логи.
+Do not attach personal journals, medical records, passwords,
+keys or raw logs to reports.
 
-## Лицензия
+## License
 
-Лицензия на распространение исходного кода пока не выбрана.
-Доступ к репозиторию не означает выдачу разрешения на распространение.
-Перед публичной публикацией автору нужно определить условия использования.
+A license for distributing the source code has not been chosen yet.
+Repository access does not grant permission to redistribute.
+Before public publication the author must define the terms of use.
