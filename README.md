@@ -17,7 +17,7 @@ and doctor appointments. No ads, analytics, accounts or mandatory cloud.
    to install apps from this source, then confirm installation.
    You can turn that permission off afterward.
 
-While the repository is private, you need a GitHub account with access to download.
+The repository is public. You can download the APK without a GitHub account.
 Updates require a matching signing key. Do not uninstall an existing app containing
 personal data without a verified backup.
 

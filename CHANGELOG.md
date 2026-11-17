@@ -37,9 +37,11 @@
   in the APK; bundled bytes were checked against the source file.
 - Gitleaks 8.30.1 found no secrets in reachable history or the intended working
   source snapshot. This is a pattern-based scan, not a guarantee of absence.
-- The full Android suite, release-install/update behavior and backup import
-  were not rerun for this release. No independent security audit or complete
-  dependency-vulnerability assessment was performed.
+- The maintainer reports successful manual testing of the release.
+  Automated on-device verification covers the 14 focused Android tests listed
+  above, not the full Android test suite.
+- No independent security audit or complete dependency-vulnerability assessment
+  was performed.
 
 ## 1.0.0-beta — current Android application identity
 
