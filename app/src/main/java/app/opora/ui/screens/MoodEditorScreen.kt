@@ -113,6 +113,7 @@ private val StringSetSaver = listSaver<Set<String>, String>(
 fun MoodEditorScreen(
     initialDate: LocalDate,
     entryId: Long? = null,
+    initialMood: Int? = null,
     vm: MoodViewModel,
     onClose: () -> Unit
 ) {
@@ -141,7 +142,7 @@ fun MoodEditorScreen(
     var saveTick by rememberSaveable(initialDate) { mutableIntStateOf(0) }
     var hasEntry by rememberSaveable(initialDate) { mutableStateOf(entryId != null) }
     var loading by remember { mutableStateOf(entryId != null) }
-    var mood by rememberSaveable(initialDate) { mutableStateOf<Int?>(null) }
+    var mood by rememberSaveable(initialDate, entryId, initialMood) { mutableStateOf(initialMood) }
     var anxietyEnabled by rememberSaveable(initialDate) { mutableStateOf(false) }
     var anxiety by rememberSaveable(initialDate) { mutableStateOf(5f) }
     var energyEnabled by rememberSaveable(initialDate) { mutableStateOf(false) }
@@ -222,7 +223,7 @@ fun MoodEditorScreen(
                 }
         }
         seeded = true
-        lastSaved = snapshot()
+        lastSaved = if (entryId == null && initialMood != null) null else snapshot()
         loading = false
     }
 
@@ -310,7 +311,9 @@ fun MoodEditorScreen(
         sleepEnabled, sleepMinutes, emotions, symptoms, note, seeded
     ) {
         if (!seeded) return@LaunchedEffect
-        if (lastSaved == null || lastSaved == snapshot() || mood == null) return@LaunchedEffect
+        if ((lastSaved == null && !(seeded && initialMood != null && currentId == null)) ||
+            lastSaved == snapshot() || mood == null
+        ) return@LaunchedEffect
         delay(700)
         // Сохранение запускается в scope экрана, а не в корутине эффекта:
         // новая правка отменяет задержку, но не уже начатую запись.

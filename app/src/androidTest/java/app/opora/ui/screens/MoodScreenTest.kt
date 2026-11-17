@@ -1,14 +1,34 @@
 package app.opora.ui.screens
 
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.width
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.test.hasClickAction
 import androidx.compose.ui.test.hasContentDescription
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onFirst
 import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.ui.text.TextLayoutResult
+import androidx.compose.ui.unit.Density
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.res.pluralStringResource
 import androidx.room.Room
 import androidx.test.platform.app.InstrumentationRegistry
 import app.opora.AppLanguage
@@ -24,6 +44,7 @@ import app.opora.ui.theme.OporaTheme
 import kotlinx.coroutines.runBlocking
 import org.junit.After
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -33,6 +54,7 @@ import java.time.LocalDate
 import java.time.LocalTime
 import java.time.ZoneId
 import java.time.YearMonth
+import java.util.Locale
 
 class MoodScreenTest {
 
@@ -286,5 +308,75 @@ class MoodScreenTest {
         ).onFirst().performClick()
 
         compose.runOnIdle { assertEquals(today, openedDate) }
+    }
+
+    @Test
+    fun countMetricDoesNotRepeatItsNumberOrOverflowAtNarrowWidth() {
+        var fontScale by mutableStateOf(1f)
+        var language by mutableStateOf("en")
+        compose.setContent {
+            OporaTheme {
+                val configuration = android.content.res.Configuration().apply {
+                    setTo(LocalConfiguration.current)
+                    setLocale(Locale.forLanguageTag(language))
+                }
+                val localizedContext = LocalContext.current.createConfigurationContext(configuration)
+                CompositionLocalProvider(
+                    LocalDensity provides Density(1f, fontScale),
+                    LocalConfiguration provides configuration,
+                    LocalContext provides localizedContext
+                ) {
+                    Box(Modifier.width(320.dp)) {
+                        MetricTile(
+                            value = "14",
+                            label = pluralStringResource(R.plurals.mood_mark_label, 14),
+                            modifier = Modifier.fillMaxWidth().testTag("mood-metric-tile"),
+                            valueTag = "mood-metric-count",
+                            labelTag = "mood-metric-count-label"
+                        )
+                    }
+                }
+            }
+        }
+        listOf("ru", "en").forEach { lang ->
+            listOf(1f, 1.3f, 2f).forEach { scale ->
+                compose.runOnIdle {
+                    language = lang
+                    fontScale = scale
+                }
+                compose.waitForIdle()
+            val count = compose.onNodeWithTag("mood-metric-count")
+            count.assertExists()
+            assertEquals("14", count.fetchSemanticsNode().config[
+                androidx.compose.ui.semantics.SemanticsProperties.Text
+            ].joinToString("") { it.text })
+            val labelNode = compose.onNodeWithTag("mood-metric-count-label")
+            val label = labelNode.fetchSemanticsNode()
+            val labelText = label.config[
+                androidx.compose.ui.semantics.SemanticsProperties.Text
+            ].joinToString("") { it.text }
+            assertFalse("Count is repeated in its label: $labelText", labelText.contains("14"))
+            val results = mutableListOf<TextLayoutResult>()
+            label.config[SemanticsActions.GetTextLayoutResult].action?.invoke(results)
+            assertTrue("Count label has no text layout at fontScale=$scale", results.isNotEmpty())
+            assertEquals(
+                "Count label was truncated at fontScale=$scale",
+                labelText.length,
+                results.first().getLineEnd(results.first().lineCount - 1)
+            )
+            assertTrue(
+                "Metric tile exceeded the 320dp viewport at language=$lang fontScale=$scale",
+                compose.onNodeWithTag("mood-metric-tile")
+                    .fetchSemanticsNode().boundsInRoot.width <= 320f
+            )
+            val expectedConfig = android.content.res.Configuration(
+                InstrumentationRegistry.getInstrumentation().targetContext.resources.configuration
+            ).apply { setLocale(Locale.forLanguageTag(lang)) }
+            val localized = InstrumentationRegistry.getInstrumentation().targetContext
+                .createConfigurationContext(expectedConfig).resources
+                .getQuantityString(R.plurals.mood_mark_label, 14)
+            assertEquals(localized, labelText)
+            }
+        }
     }
 }

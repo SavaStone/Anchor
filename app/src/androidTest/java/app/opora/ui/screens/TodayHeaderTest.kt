@@ -13,6 +13,8 @@ import androidx.compose.ui.semantics.SemanticsActions
 import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.onNodeWithContentDescription
+import androidx.compose.ui.test.performClick
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
 import androidx.room.Room
@@ -25,6 +27,8 @@ import app.opora.data.prefs.SettingsRepository
 import app.opora.domain.dayMonth
 import app.opora.domain.weekdayDate
 import app.opora.ui.TodayViewModel
+import app.opora.ui.TestStrings
+import app.opora.R
 import app.opora.ui.theme.OporaTheme
 import org.junit.After
 import org.junit.Assert.assertFalse
@@ -109,6 +113,33 @@ class TodayHeaderTest {
                 results.first().lineCount <= 2
             )
         }
+    }
+
+    @Test
+    fun homeMoodTapOpensSelectionFlowWithChosenLevel() {
+        var selected: Pair<LocalDate, Int>? = null
+        compose.setContent {
+            OporaTheme {
+                TodayScreen(
+                    vm = vm,
+                    onEditMood = { _, _ -> },
+                    onSelectMood = { date, level -> selected = date to level },
+                    onOpenMeds = {},
+                    onAddMedication = {},
+                    onOpenJournal = {},
+                    onOpenAppointments = {}
+                )
+            }
+        }
+        compose.waitUntil(timeoutMillis = 10_000) {
+            compose.onAllNodesWithText(LocalDate.now().weekdayDate(
+                AppLanguage.locale(InstrumentationRegistry.getInstrumentation().targetContext)
+            )).fetchSemanticsNodes().isNotEmpty()
+        }
+        compose.onNodeWithText(TestStrings.get(R.string.today_mood_question))
+            .assertDoesNotExist()
+        compose.onNodeWithContentDescription(TestStrings.moodDescription(3)).performClick()
+        assertTrue("Home mood tap did not request the editor with the selected level", selected == (LocalDate.now() to 3))
     }
 
 }

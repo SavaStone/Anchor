@@ -12,6 +12,10 @@
         <item quantity="one">%1$d check-in</item>
         <item quantity="other">%1$d check-ins</item>
     </plurals>
+    <plurals name="mood_mark_label">
+        <item quantity="one">check-in</item>
+        <item quantity="other">check-ins</item>
+    </plurals>
     <string name="mood_scale_hint">1 — very difficult, 5 — great</string>
     <string name="mood_anxiety_title">Anxiety</string>
     <string name="mood_anxiety_hint">0 — calm, 10 — very strong</string>

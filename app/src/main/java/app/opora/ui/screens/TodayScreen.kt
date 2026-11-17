@@ -122,7 +122,8 @@ fun TodayScreen(
     onAddMedication: () -> Unit,
     onOpenJournal: () -> Unit,
     onOpenAppointments: () -> Unit,
-    onEditMedication: (String) -> Unit = {}
+    onEditMedication: (String) -> Unit = {},
+    onSelectMood: (LocalDate, Int) -> Unit = { _, _ -> }
 ) {
     val state by vm.state.collectAsState()
     if (state.loading) {
@@ -225,12 +226,12 @@ fun TodayScreen(
                     HomeBlock.MOOD -> {
                         item {
                             MoodCheckInCard(
-                        mood = state.mood,
-                        onSelect = vm::quickMood,
-                        onDetails = { onEditMood(state.today, state.mood?.id) }
-                    )
-                }
-            }
+                                mood = state.mood,
+                                onSelect = { level -> onSelectMood(state.today, level) },
+                                onDetails = { onEditMood(state.today, state.mood?.id) }
+                            )
+                        }
+                    }
 
                     HomeBlock.MEDS -> {
                 if (state.meds.isEmpty()) {
@@ -495,8 +496,7 @@ private fun MoodCheckInCard(
             // слово «Настроение» рвётся посередине.
             if (largeFont) {
                 SectionHeader(
-                    stringResource(R.string.home_block_mood),
-                    subtitle = if (current == null) stringResource(R.string.today_mood_question) else null
+                    stringResource(R.string.home_block_mood)
                 )
                 TextButton(
                     onClick = onDetails,
@@ -512,8 +512,7 @@ private fun MoodCheckInCard(
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     SectionHeader(
                         stringResource(R.string.home_block_mood),
-                        Modifier.weight(1f),
-                        subtitle = if (current == null) stringResource(R.string.today_mood_question) else null
+                        Modifier.weight(1f)
                     )
                     TextButton(onClick = onDetails) {
                         Text(

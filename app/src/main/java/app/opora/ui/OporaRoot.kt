@@ -271,6 +271,9 @@ fun OporaRoot(
                             else "mood_edit?date=${date.toEpochDay()}"
                         )
                     },
+                    onSelectMood = { date, level ->
+                        openRoute("mood_edit?date=${date.toEpochDay()}&initialMood=$level")
+                    },
                     onOpenMeds = { navigateTab("meds") },
                     onAddMedication = { openRoute("med_edit") },
                     onOpenJournal = { navigateTab("journal") },
@@ -299,7 +302,7 @@ fun OporaRoot(
             }
 
             composable(
-                route = "mood_edit?date={date}&id={id}",
+                route = "mood_edit?date={date}&id={id}&initialMood={initialMood}",
                 arguments = listOf(
                     navArgument("date") {
                         type = NavType.LongType
@@ -308,6 +311,10 @@ fun OporaRoot(
                     navArgument("id") {
                         type = NavType.LongType
                         defaultValue = -1L
+                    },
+                    navArgument("initialMood") {
+                        type = NavType.IntType
+                        defaultValue = 0
                     }
                 )
             ) { entry ->
@@ -318,6 +325,7 @@ fun OporaRoot(
                 MoodEditorScreen(
                     initialDate = date,
                     entryId = entryId,
+                    initialMood = entry.arguments?.getInt("initialMood")?.takeIf { it in 1..5 },
                     vm = moodVm,
                     onClose = { nav.popBackStack() }
                 )

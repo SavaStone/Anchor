@@ -14,6 +14,12 @@
         <item quantity="many">%1$d отметок</item>
         <item quantity="other">%1$d отметки</item>
     </plurals>
+    <plurals name="mood_mark_label">
+        <item quantity="one">отметка</item>
+        <item quantity="few">отметки</item>
+        <item quantity="many">отметок</item>
+        <item quantity="other">отметки</item>
+    </plurals>
     <string name="mood_scale_hint">1 — очень тяжело, 5 — отлично</string>
     <string name="mood_anxiety_title">Тревога</string>
     <string name="mood_anxiety_hint">0 — спокойно, 10 — очень сильная</string>

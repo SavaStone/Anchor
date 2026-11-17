@@ -6,11 +6,13 @@ import androidx.compose.ui.test.isToggleable
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onNodeWithContentDescription
+import androidx.compose.ui.test.onAllNodesWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
 import androidx.compose.ui.test.performScrollToIndex
 import androidx.room.Room
 import androidx.test.platform.app.InstrumentationRegistry
+import android.os.SystemClock
 import app.opora.R
 import app.opora.data.OporaRepository
 import app.opora.data.db.OporaDatabase
@@ -24,6 +26,7 @@ import org.junit.Assert.assertTrue
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
+import kotlinx.coroutines.runBlocking
 import java.time.LocalDate
 
 /**
@@ -149,5 +152,39 @@ class MoodEditorScreenTest {
         assertTrue(
             compose.onAllNodesWithText(TestStrings.get(R.string.mood_need_mood_title)).fetchSemanticsNodes().isEmpty()
         )
+    }
+
+    @Test
+    fun selectedHomeMoodIsSeededAndAutosavedOnce() {
+        compose.setContent {
+            OporaTheme {
+                MoodEditorScreen(
+                    initialDate = LocalDate.now(),
+                    initialMood = 3,
+                    vm = MoodViewModel(repo),
+                    onClose = {}
+                )
+            }
+        }
+        compose.waitUntil(timeoutMillis = 10_000) {
+            compose.onAllNodesWithContentDescription(TestStrings.moodDescription(3))
+                .fetchSemanticsNodes().isNotEmpty() && runBlocking {
+                db.moodDao().getAll().any { it.date == LocalDate.now().toEpochDay() && it.mood == 3 }
+            }
+        }
+        compose.onNodeWithContentDescription(TestStrings.moodDescription(4)).performClick()
+        val settleAfter = SystemClock.uptimeMillis() + 1_000
+        compose.waitUntil(timeoutMillis = 10_000) {
+            val entries = runBlocking {
+                db.moodDao().getAll().filter { it.date == LocalDate.now().toEpochDay() }
+            }
+            SystemClock.uptimeMillis() >= settleAfter &&
+                entries.size == 1 && entries.single().mood == 4
+        }
+        val entries = runBlocking {
+            db.moodDao().getAll().filter { it.date == LocalDate.now().toEpochDay() }
+        }
+        assertTrue("Changing the selected mood should update one entry: $entries", entries.size == 1)
+        assertTrue("The updated mood was not saved: $entries", entries.single().mood == 4)
     }
 }

@@ -45,6 +45,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.pluralStringResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -216,45 +217,34 @@ fun MoodScreen(
                 item {
                     MoodSection {
                         BoxWithConstraints(Modifier.fillMaxWidth()) {
-                            // Четыре узкие плитки не помещают подписи при крупном шрифте.
-                            val columns = if (LocalDensity.current.fontScale >= 1.3f) 2 else 4
-                            val gap = 8.dp
-                            // −1dp: при дробной ширине четыре плитки округляются вверх
-                            // по пикселям и FlowRow переносит четвёртую на новую строку.
-                            val tileWidth =
-                                ((maxWidth - gap * (columns - 1).toFloat()) / columns.toFloat()) - 1.dp
-                            FlowRow(
-                                horizontalArrangement = Arrangement.spacedBy(gap),
-                                verticalArrangement = Arrangement.spacedBy(gap)
-                            ) {
-                                val dash = stringResource(R.string.common_dash)
-                                MetricTile(
-                                    value = state.stats30.avgMood
-                                        ?.let { formatDecimal(it, locale) } ?: dash,
-                                    label = stringResource(R.string.mood_metric_mood),
-                                    modifier = Modifier.width(tileWidth)
+                            val columns = if (maxWidth < 360.dp || LocalDensity.current.fontScale >= 1.3f) 1 else 2
+                            val dash = stringResource(R.string.common_dash)
+                            val metrics = listOf(
+                                (state.stats30.avgMood?.let { formatDecimal(it, locale) } ?: dash) to
+                                    stringResource(R.string.mood_metric_mood),
+                                (state.stats30.avgAnxiety?.let { formatDecimal(it, locale) } ?: dash) to
+                                    stringResource(R.string.mood_metric_anxiety),
+                                (state.stats30.avgSleepMinutes?.let { formatSleep(context, it) } ?: dash) to
+                                    stringResource(R.string.mood_metric_sleep),
+                                state.stats30.count.toString() to pluralStringResource(
+                                    R.plurals.mood_mark_label, state.stats30.count
                                 )
-                                MetricTile(
-                                    value = state.stats30.avgAnxiety
-                                        ?.let { formatDecimal(it, locale) } ?: dash,
-                                    label = stringResource(R.string.mood_metric_anxiety),
-                                    modifier = Modifier.width(tileWidth)
-                                )
-                                MetricTile(
-                                    value = state.stats30.avgSleepMinutes
-                                        ?.let { formatSleep(context, it) } ?: dash,
-                                    label = stringResource(R.string.mood_metric_sleep),
-                                    modifier = Modifier.width(tileWidth)
-                                )
-                                MetricTile(
-                                    value = state.stats30.count.toString(),
-                                    label = pluralStringResource(
-                                        R.plurals.mood_marks,
-                                        state.stats30.count,
-                                        state.stats30.count
-                                    ),
-                                    modifier = Modifier.width(tileWidth)
-                                )
+                            )
+                            Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                                metrics.chunked(columns).forEachIndexed { rowIndex, rowMetrics ->
+                                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                        rowMetrics.forEachIndexed { columnIndex, (value, label) ->
+                                            val index = rowIndex * columns + columnIndex
+                                            MetricTile(
+                                                value = value,
+                                                label = label,
+                                                modifier = Modifier.weight(1f),
+                                                valueTag = if (index == 3) "mood-metric-count" else null,
+                                                labelTag = if (index == 3) "mood-metric-count-label" else null
+                                            )
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -529,19 +519,30 @@ private fun SelectedDayCard(
 }
 
 @Composable
-private fun MetricTile(value: String, label: String, modifier: Modifier = Modifier) {
-    OporaCard(modifier = modifier, contentPadding = OporaSpacing.m) {
-        Column {
+internal fun MetricTile(
+    value: String,
+    label: String,
+    modifier: Modifier = Modifier,
+    valueTag: String? = null,
+    labelTag: String? = null
+) {
+    OporaCard(modifier = modifier.heightIn(min = 76.dp), contentPadding = OporaSpacing.m) {
+        Column(
+            modifier = Modifier.fillMaxWidth(),
+            verticalArrangement = Arrangement.spacedBy(4.dp)
+        ) {
             Text(
                 value,
                 style = MaterialTheme.typography.titleMedium,
                 fontWeight = FontWeight.SemiBold,
-                maxLines = 2
+                maxLines = 2,
+                modifier = if (valueTag != null) Modifier.testTag(valueTag) else Modifier
             )
             Text(
                 label,
-                style = MaterialTheme.typography.labelSmall,
-                color = MaterialTheme.colorScheme.onSurfaceVariant
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = if (labelTag != null) Modifier.testTag(labelTag) else Modifier
             )
         }
     }

@@ -178,23 +178,6 @@ class TodayViewModel(private val repo: OporaRepository) : ViewModel() {
         viewModelScope.launch { runCatching { repo.ensureTodayLogs(today) } }
     }
 
-    fun quickMood(level: Int) {
-        val date = LocalDate.now()
-        viewModelScope.launch {
-            // Каждое касание — новая отметка: за день их может быть несколько.
-            repo.saveMood(
-                date = date,
-                mood = level,
-                anxiety = null,
-                energy = null,
-                sleepMinutes = null,
-                emotions = emptyList(),
-                symptoms = emptyList(),
-                note = ""
-            )
-        }
-    }
-
     fun take(logId: String) = viewModelScope.launch { repo.setDoseStatus(logId, "taken") }
     fun skip(logId: String) = viewModelScope.launch { repo.setDoseStatus(logId, "skipped") }
     fun undo(logId: String) = viewModelScope.launch { repo.setDoseStatus(logId, "pending") }
