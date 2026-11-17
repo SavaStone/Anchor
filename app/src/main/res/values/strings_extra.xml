@@ -92,11 +92,11 @@
     <string name="onboarding_feature_meds_title">Лекарства</string>
     <string name="onboarding_feature_meds_body">Расписание с точным временем, уведомления с действиями, запас таблеток и история приёмов.</string>
     <string name="onboarding_feature_journal_title">Дневник</string>
-    <string name="onboarding_feature_journal_body">Свободные записи с тегами и привязкой к настроению. Всё хранится только на устройстве.</string>
+    <string name="onboarding_feature_journal_body">Свободные записи с тегами и привязкой к настроению. По умолчанию записи хранятся на устройстве.</string>
     <string name="onboarding_feature_privacy_title">Приватность</string>
-    <string name="onboarding_feature_privacy_body">Нет облака по умолчанию. Резервные копии шифруются, синхронизация — только со своим сервером.</string>
+    <string name="onboarding_feature_privacy_body">Записи хранятся локально по умолчанию. WebDAV и авторезервирование — по вашей настройке, экспорт и отправка — по вашему запросу.</string>
     <string name="onboarding_privacy_title">Только для вас</string>
-    <string name="onboarding_privacy_body">Никакой регистрации и отправки данных. Приложение работает офлайн; при желании можно подключить свою папку WebDAV.</string>
+    <string name="onboarding_privacy_body">Без регистрации и автоматической отправки данных разработчику. WebDAV, резервное копирование и экспорт — по вашему выбору.</string>
     <string name="onboarding_name_label">Как вас называть?</string>
     <string name="onboarding_name_placeholder">Необязательно</string>
     <string name="onboarding_consent_title">Я понимаю, что «%1$s» — инструмент самонаблюдения, а не медицинский сервис</string>

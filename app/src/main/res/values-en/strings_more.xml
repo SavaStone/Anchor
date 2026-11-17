@@ -109,9 +109,9 @@
     <string name="about_version">Version %1$s · build %2$d</string>
     <string name="about_section_privacy">Privacy</string>
     <string name="about_privacy_accounts_title">No accounts, no analytics</string>
-    <string name="about_privacy_accounts_body">The app sends no data to the developer and requires no sign-up.</string>
+    <string name="about_privacy_accounts_body">No sign-up or automatic data collection by the developer. Bug reports are sent only at your request.</string>
     <string name="about_privacy_local_title">Data on your device</string>
-    <string name="about_privacy_local_body">Mood, medications, and journal live in a local database. Only you can access them.</string>
+    <string name="about_privacy_local_body">Mood, medications, and journal live in a local database, not encrypted by the app. App lock protects access through the interface.</string>
     <string name="about_privacy_server_title">Your own server, optional</string>
     <string name="about_privacy_server_body">WebDAV sync uses your own folder. Files are encrypted before they are sent.</string>
     <string name="about_section_important">Good to know</string>

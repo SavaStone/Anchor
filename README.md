@@ -3,16 +3,16 @@
 A local-first Android app for mood tracking, medication reminders, journaling
 and doctor appointments. No ads, analytics, accounts or mandatory cloud.
 
-**Beta 1.0.0 · Android 8.0+ · English and Russian**
+**1.0.1-beta · Android 8.0+ · English and Russian**
 
 **Development note:** This project was vibe-coded with AI assistance.
 
 ## Install
 
-**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.0-beta/Anchor-1.0.0-beta.apk)**
+**[Download the Android APK](https://github.com/SavaStone/Anchor/releases/download/v1.0.1-beta/Anchor-1.0.1-beta.apk)**
 
-1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.0-beta) on your Android device.
-2. Under **Assets**, download **Anchor-1.0.0-beta.apk**.
+1. Open the [release page](https://github.com/SavaStone/Anchor/releases/tag/v1.0.1-beta) on your Android device.
+2. Under **Assets**, download **Anchor-1.0.1-beta.apk**.
 3. Open the downloaded file. If Android asks, allow your browser or file manager
    to install apps from this source, then confirm installation.
    You can turn that permission off afterward.
@@ -20,6 +20,10 @@ and doctor appointments. No ads, analytics, accounts or mandatory cloud.
 While the repository is private, you need a GitHub account with access to download.
 Updates require a matching signing key. Do not uninstall an existing app containing
 personal data without a verified backup.
+
+The release includes `SHA256SUMS.txt` for checking the downloaded file
+(`shasum -a 256 Anchor-1.0.1-beta.apk` on macOS). A checksum detects a mismatched
+download; it is not a substitute for Android's signing-key verification.
 
 **Moving from the old `app.opora` installation:** the Android application ID changed from `app.opora`
 to `io.github.savastone.anchor`. Android installs this version as a separate app;
@@ -50,6 +54,8 @@ lock; screenshot protection is available separately.
 Actual app screens in dark theme, using fictional demo records and example
 interactions. The seven-day streak uses the app's day-restoration feature.
 No personal health records are shown.
+The migration-test database also contains fictional demo records.
+Screenshots illustrate the app and may differ from the latest beta.
 
 <p>
   <img src="docs/screenshots/today.png" width="240" alt="Today in dark theme: mood summary, a seven-day flame streak and logged medication doses.">
@@ -79,16 +85,17 @@ See [Data and privacy](PRIVACY.md) for details.
   Do not rely on it as your only medication reminder or medical record.
 - Reminder timing depends on Android permissions and device restrictions.
 - Keep a verified external backup and remember its password.
-- Current checks: 160 JVM tests passed; lint reported 0 errors and 24 warnings.
-  The signed release was installed and launched alongside the old app.
-  Nine targeted Android bug-report tests passed on the previous version;
-  backup import and the full Android test suite were not rerun for this change.
+- Verification is release-specific. See the changelog for executed checks and
+  known gaps; a successful build is not a full security audit or a guarantee
+  that reminders will run on every device.
 
 See the [changelog](CHANGELOG.md) for release details and the APK checksum.
 
 ## Build and contribute
 
-Open the project in Android Studio with **JDK 17** and **Android SDK 35**:
+Open the project in Android Studio with **JDK 17** and **Android SDK 35**.
+Install platform 35 and the required build tools through SDK Manager, let Gradle
+sync finish, then run:
 
 ```sh
 ./gradlew :app:assembleDebug
@@ -98,6 +105,7 @@ The debug APK is at `app/build/outputs/apk/debug/app-debug.apk`.
 It uses a different signing key from the official release.
 See [Contributing](CONTRIBUTING.md) for checks, compatibility rules and test-device safety.
 The official signing key is not included.
+For command-line setup and CI checks, see [Contributing](CONTRIBUTING.md).
 
 ## Author and feedback
 
@@ -110,3 +118,4 @@ The official signing key is not included.
 ## License
 
 Licensed under the [MIT License](LICENSE). Copyright © 2026 Sava Stone.
+Dependencies retain their own licenses; see [Third-party notices](THIRD_PARTY_NOTICES.md).

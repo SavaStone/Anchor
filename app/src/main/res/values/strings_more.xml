@@ -109,9 +109,9 @@
     <string name="about_version">Версия %1$s · сборка %2$d</string>
     <string name="about_section_privacy">Приватность</string>
     <string name="about_privacy_accounts_title">Нет аккаунтов и аналитики</string>
-    <string name="about_privacy_accounts_body">Приложение не отправляет данные разработчику и не требует регистрации.</string>
+    <string name="about_privacy_accounts_body">Нет регистрации и автоматической отправки данных разработчику. Отчёт об ошибке отправляется только по вашему запросу.</string>
     <string name="about_privacy_local_title">Данные на устройстве</string>
-    <string name="about_privacy_local_body">Настроение, лекарства и дневник хранятся в локальной базе. Доступ — только у вас.</string>
+    <string name="about_privacy_local_body">Настроение, лекарства и дневник хранятся в локальной базе без шифрования приложением. Блокировка защищает доступ через интерфейс.</string>
     <string name="about_privacy_server_title">Свой сервер по желанию</string>
     <string name="about_privacy_server_body">WebDAV-синхронизация использует вашу папку. Файлы шифруются до отправки.</string>
     <string name="about_section_important">Важно понимать</string>

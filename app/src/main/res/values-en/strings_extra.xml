@@ -90,11 +90,11 @@
     <string name="onboarding_feature_meds_title">Medications</string>
     <string name="onboarding_feature_meds_body">Schedules with exact times, notifications with actions, medication supply, and dose history.</string>
     <string name="onboarding_feature_journal_title">Journal</string>
-    <string name="onboarding_feature_journal_body">Free-form entries with tags and a mood link. Everything stays on your device.</string>
+    <string name="onboarding_feature_journal_body">Free-form entries with tags and a mood link. Entries stay on your device by default.</string>
     <string name="onboarding_feature_privacy_title">Privacy</string>
-    <string name="onboarding_feature_privacy_body">No cloud by default. Backups are encrypted, and syncing works only with your own server.</string>
+    <string name="onboarding_feature_privacy_body">Entries are stored locally by default. WebDAV and automatic backups require your setup; export and sharing happen at your request.</string>
     <string name="onboarding_privacy_title">Just for you</string>
-    <string name="onboarding_privacy_body">No sign-up and no data sent anywhere. The app works offline; you can connect your own WebDAV folder if you want.</string>
+    <string name="onboarding_privacy_body">No sign-up or automatic data collection by the developer. WebDAV, backups and exports are optional and under your control.</string>
     <string name="onboarding_name_label">What should we call you?</string>
     <string name="onboarding_name_placeholder">Optional</string>
     <string name="onboarding_consent_title">I understand that %1$s is a self-observation tool, not a medical device</string>
