@@ -110,8 +110,9 @@ For command-line setup and CI checks, see [Contributing](CONTRIBUTING.md).
 ## Author and feedback
 
 - [Sava Stone on YouTube](https://www.youtube.com/@SavaStone)
-- [Sava Stone on GitHub](https://github.com/SavaStone)
-- Bug reports: **More → Report a problem** in the app, or **savastone32@proton.me**.
+- Bug reports: [open an issue](https://github.com/SavaStone/Anchor/issues/new/choose)
+  or email **savastone32@proton.me**. Include the report text prepared via
+  **More → Report a problem** in the app, after reviewing it for personal information.
 - Security issues: follow [SECURITY.md](SECURITY.md); do not post vulnerabilities
   or personal medical data in public issues.
 
